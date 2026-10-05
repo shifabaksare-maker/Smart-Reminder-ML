@@ -1,0 +1,1001 @@
+Task_ID,Task_Name,Category,Days_Until_Due,Estimated_Hours,Importance_Rating,Task_Complexity,Time_Slot,Past_Completion_Rate,Reminder_Urgency
+REM_0001,Attend Friend's Birthday Dinner,Social,3,1.5,4,Low,Evening,0.77,Medium
+REM_0002,Deploy Application to Production,Work,0,1.5,5,Low,Morning,0.83,High
+REM_0003,Attend Department Farewell,Social,0,2.0,4,High,Morning,0.56,High
+REM_0004,Read 30 Pages of Book,Personal,2,1.0,2,Low,Morning,0.6,Medium
+REM_0005,Study for AI Midterms,Academic,5,0.5,2,Low,Morning,0.64,Medium
+REM_0006,Clean and Organize Work Desk,Personal,1,1.0,2,High,Night,0.47,Medium
+REM_0007,Update Jira Sprint Backlog,Work,5,0.25,3,High,Evening,0.95,Medium
+REM_0008,Complete Mini Project Documentation,Academic,6,0.25,4,High,Night,0.71,Medium
+REM_0009,Drink 2 Liters Water Goal,Health,0,0.5,5,Low,Afternoon,0.8,High
+REM_0010,Doctor Consultation Appointment,Health,5,5.0,3,Low,Night,0.86,Medium
+REM_0011,Attend Guest Lecture on Deep Learning,Academic,12,1.0,5,Medium,Evening,0.94,Medium
+REM_0012,Submit Final Semester Thesis,Academic,3,2.0,3,Medium,Morning,0.64,Medium
+REM_0013,Credit Card Due Payment,Financial,2,0.25,4,High,Evening,0.88,High
+REM_0014,Visit Grandparents at Weekend,Social,0,1.5,3,Medium,Afternoon,0.84,High
+REM_0015,Attend Friend's Birthday Dinner,Social,7,1.0,1,Low,Afternoon,0.51,Low
+REM_0016,Doctor Consultation Appointment,Health,2,0.5,2,Low,Morning,0.62,Medium
+REM_0017,Review Monthly Bank Statement,Financial,7,3.0,4,Medium,Evening,0.7,Medium
+REM_0018,Prepare Product Pitch Deck,Work,7,2.0,4,Medium,Afternoon,0.71,Medium
+REM_0019,Mentor Junior AI Students,Social,4,0.25,2,High,Morning,0.51,Medium
+REM_0020,Cook Meal Prep for Tomorrow,Personal,2,3.0,2,Low,Afternoon,0.58,Medium
+REM_0021,Update Jira Sprint Backlog,Work,3,0.5,5,Medium,Evening,0.49,High
+REM_0022,Attend Department Farewell,Social,12,1.5,3,High,Afternoon,0.91,Low
+REM_0023,Community Volunteer Event,Social,8,3.0,1,Low,Afternoon,0.74,Low
+REM_0024,Attend Guest Lecture on Deep Learning,Academic,2,2.0,4,Medium,Evening,0.91,High
+REM_0025,Study for AI Midterms,Academic,0,1.0,4,High,Evening,0.57,High
+REM_0026,Security Audit Review,Work,12,1.0,3,Medium,Night,0.82,Low
+REM_0027,Send Festival Greeting Messages,Social,3,5.0,4,Low,Evening,0.58,Medium
+REM_0028,Deploy Application to Production,Work,2,1.5,2,High,Evening,0.72,Medium
+REM_0029,Visit Grandparents at Weekend,Social,0,3.0,1,Medium,Night,0.58,Medium
+REM_0030,Refill Prescription at Pharmacy,Health,14,1.5,3,Low,Night,0.85,Low
+REM_0031,Submit ML Lab Assignment,Academic,2,1.0,4,Low,Afternoon,0.79,High
+REM_0032,RSVP for Alumni Reunion,Social,0,0.5,3,High,Night,0.55,High
+REM_0033,Laundry and Dry Cleaning Pickup,Personal,0,1.5,2,Medium,Night,0.46,Medium
+REM_0034,Backup Laptop Hard Drive,Personal,6,1.5,1,High,Evening,0.65,Low
+REM_0035,Buy Weekly Groceries and Essentials,Personal,12,0.5,1,High,Morning,0.51,Low
+REM_0036,Participate in College Tech Fest,Social,8,1.0,2,Medium,Evening,0.58,Low
+REM_0037,Submit Research Paper Draft,Academic,0,3.0,5,Medium,Afternoon,0.79,High
+REM_0038,Pay Electricity & Utility Bill,Financial,7,3.0,5,High,Evening,0.86,High
+REM_0039,Car Servicing and Oil Change,Personal,6,0.5,1,High,Morning,0.93,Low
+REM_0040,Mentor Junior AI Students,Social,0,1.0,1,High,Afternoon,0.82,Medium
+REM_0041,Prepare Product Pitch Deck,Work,6,1.5,3,Low,Morning,0.58,Medium
+REM_0042,Water Indoor Plants,Personal,6,1.5,3,Medium,Morning,0.75,Medium
+REM_0043,Attend Guest Lecture on Deep Learning,Academic,0,0.5,3,Medium,Afternoon,0.58,High
+REM_0044,Study for AI Midterms,Academic,10,2.0,4,High,Morning,0.72,Medium
+REM_0045,Submit Final Semester Thesis,Academic,5,0.5,4,Medium,Morning,0.83,Medium
+REM_0046,Car Servicing and Oil Change,Personal,12,4.0,4,Low,Night,0.65,Medium
+REM_0047,Car Servicing and Oil Change,Personal,0,1.0,4,Medium,Night,0.96,High
+REM_0048,System Architecture Review,Work,10,0.5,3,High,Afternoon,0.75,Low
+REM_0049,Mentor Junior AI Students,Social,12,1.0,3,Medium,Evening,0.5,Low
+REM_0050,Submit Tuition Fees Payment,Financial,10,1.5,4,Medium,Morning,0.82,Medium
+REM_0051,Deploy Application to Production,Work,3,2.0,3,Low,Evening,0.88,Medium
+REM_0052,Group Project Discussion,Academic,8,1.5,4,High,Afternoon,0.87,High
+REM_0053,Clean and Organize Work Desk,Personal,10,1.0,1,Low,Morning,0.5,Low
+REM_0054,Connect with Mentors on LinkedIn,Social,4,0.5,2,Low,Afternoon,0.76,Medium
+REM_0055,Submit ML Lab Assignment,Academic,0,2.0,2,Medium,Morning,0.64,Medium
+REM_0056,Clean and Organize Work Desk,Personal,7,1.5,1,Medium,Night,0.5,Low
+REM_0057,System Architecture Review,Work,0,1.0,4,Low,Night,0.79,High
+REM_0058,Update Jira Sprint Backlog,Work,8,1.0,3,Medium,Afternoon,0.49,Medium
+REM_0059,Prepare for Viva Exam,Academic,0,2.0,5,High,Night,0.82,High
+REM_0060,Book Blood Test Diagnostics,Health,1,1.0,3,Medium,Night,0.83,High
+REM_0061,Call Parents and Family,Social,6,5.0,1,High,Morning,0.84,Medium
+REM_0062,Solve Data Science Problem Set,Academic,3,1.0,3,High,Evening,0.85,High
+REM_0063,Study for AI Midterms,Academic,0,0.25,2,Low,Afternoon,0.47,Medium
+REM_0064,Backup Laptop Hard Drive,Personal,4,1.0,1,Low,Night,0.7,Low
+REM_0065,Team Standup Sync,Work,1,1.0,4,Medium,Afternoon,0.78,High
+REM_0066,Submit Seminar Abstract,Academic,3,1.0,4,High,Morning,0.9,High
+REM_0067,Prepare Presentation Slides,Academic,6,0.25,3,High,Morning,0.79,Medium
+REM_0068,Study for AI Midterms,Academic,12,1.0,4,Low,Night,0.79,Low
+REM_0069,Renew Vehicle Insurance Policy,Financial,4,4.0,4,Low,Night,0.65,High
+REM_0070,Complete Mini Project Documentation,Academic,0,2.0,3,Medium,Morning,0.46,High
+REM_0071,Review Monthly Bank Statement,Financial,8,0.25,3,Medium,Evening,0.82,Medium
+REM_0072,Pay Health Insurance Premium,Financial,7,0.5,5,High,Night,0.54,High
+REM_0073,Deploy Application to Production,Work,7,6.0,5,Medium,Afternoon,0.67,High
+REM_0074,Group Project Discussion,Academic,3,3.0,5,High,Morning,0.68,High
+REM_0075,Community Volunteer Event,Social,7,0.25,3,Low,Morning,0.93,Medium
+REM_0076,Backup Laptop Hard Drive,Personal,2,1.0,3,High,Afternoon,0.46,High
+REM_0077,Revise Machine Learning Notes,Academic,12,0.5,2,Low,Afternoon,0.95,Low
+REM_0078,Group Project Discussion,Academic,6,0.5,4,Low,Afternoon,0.62,Medium
+REM_0079,Credit Card Due Payment,Financial,6,2.0,5,High,Afternoon,0.87,High
+REM_0080,Home Appliance Maintenance,Personal,0,1.0,2,Low,Morning,0.92,Medium
+REM_0081,Recharge Mobile Prepaid Plan,Financial,3,0.25,2,High,Evening,0.85,Medium
+REM_0082,Refill Prescription at Pharmacy,Health,0,0.25,5,High,Evening,0.89,High
+REM_0083,Team Standup Sync,Work,7,0.25,2,Medium,Afternoon,0.97,Low
+REM_0084,Connect with Mentors on LinkedIn,Social,8,6.0,4,Medium,Night,0.85,Medium
+REM_0085,Doctor Consultation Appointment,Health,3,2.0,2,Low,Night,0.75,Medium
+REM_0086,Home Appliance Maintenance,Personal,1,0.25,2,Low,Morning,0.7,Medium
+REM_0087,Clean and Organize Work Desk,Personal,0,0.25,1,High,Evening,0.79,Medium
+REM_0088,Prepare Product Pitch Deck,Work,14,0.5,3,Low,Afternoon,0.91,Low
+REM_0089,Drink 2 Liters Water Goal,Health,2,0.25,5,Low,Night,0.96,High
+REM_0090,Organize Digital Files & Photos,Personal,0,5.0,2,Medium,Morning,0.73,High
+REM_0091,Participate in College Tech Fest,Social,6,1.0,3,Medium,Morning,0.78,Medium
+REM_0092,Team Standup Sync,Work,0,5.0,3,Low,Morning,0.92,High
+REM_0093,Participate in College Tech Fest,Social,4,0.5,2,Low,Evening,0.55,Low
+REM_0094,Track Daily Calorie Intake,Health,5,5.0,2,Low,Evening,0.97,Medium
+REM_0095,Security Audit Review,Work,6,0.5,4,High,Evening,0.88,Medium
+REM_0096,Backup Laptop Hard Drive,Personal,12,4.0,3,Medium,Morning,0.83,Low
+REM_0097,Prepare Presentation Slides,Academic,5,4.0,4,Medium,Evening,0.91,High
+REM_0098,Submit ML Lab Assignment,Academic,14,1.0,3,Medium,Afternoon,0.65,Low
+REM_0099,Mentor Junior AI Students,Social,14,2.0,3,Low,Night,0.7,Low
+REM_0100,Organize Digital Files & Photos,Personal,0,2.0,3,Medium,Morning,0.98,High
+REM_0101,Prepare for Viva Exam,Academic,14,2.0,4,High,Afternoon,0.95,Low
+REM_0102,Buy Weekly Groceries and Essentials,Personal,4,5.0,1,Medium,Afternoon,0.77,Medium
+REM_0103,File Income Tax Return,Financial,2,1.5,4,Low,Evening,0.64,High
+REM_0104,Take Prescribed Morning Medication,Health,4,1.0,5,Medium,Afternoon,0.9,High
+REM_0105,Send Wedding Anniversary Wishes,Social,5,3.0,2,High,Morning,0.66,Medium
+REM_0106,Take Multivitamins & Supplements,Health,7,0.25,3,Medium,Afternoon,0.46,Medium
+REM_0107,Bug Triage and Code Review,Work,3,1.0,4,Low,Night,0.68,Medium
+REM_0108,Complete Mini Project Documentation,Academic,4,1.0,5,High,Evening,0.78,High
+REM_0109,Recharge Mobile Prepaid Plan,Financial,10,0.25,5,High,Afternoon,0.94,Medium
+REM_0110,Evening Gym Cardio Workout,Health,4,1.0,5,High,Morning,0.62,High
+REM_0111,Pay Electricity & Utility Bill,Financial,6,0.25,3,Medium,Afternoon,0.52,Medium
+REM_0112,Update Jira Sprint Backlog,Work,1,3.0,3,Medium,Evening,0.7,High
+REM_0113,Deploy Application to Production,Work,6,0.5,3,Low,Afternoon,0.47,Medium
+REM_0114,Transfer Mutual Fund SIP,Financial,1,0.25,2,Medium,Morning,0.69,Medium
+REM_0115,Annual Dental Checkup,Health,1,1.0,3,High,Night,0.82,High
+REM_0116,Participate in College Tech Fest,Social,10,0.25,4,Medium,Morning,0.6,Medium
+REM_0117,Submit Research Paper Draft,Academic,8,0.5,4,Low,Evening,0.56,Medium
+REM_0118,Prepare for Viva Exam,Academic,5,1.0,3,High,Night,0.85,Medium
+REM_0119,Morning Yoga and Meditation,Health,0,1.5,3,Medium,Night,0.92,High
+REM_0120,Renew Passport Documentation,Personal,1,1.0,2,Low,Night,0.58,Medium
+REM_0121,Clean and Organize Work Desk,Personal,2,0.25,2,Medium,Morning,0.62,Medium
+REM_0122,Organize Weekend Get-together,Social,1,1.0,3,Low,Afternoon,0.81,Medium
+REM_0123,Book Blood Test Diagnostics,Health,8,0.25,4,Low,Evening,0.73,Medium
+REM_0124,Water Indoor Plants,Personal,3,0.5,1,High,Morning,0.64,Medium
+REM_0125,Mentor Junior AI Students,Social,6,1.0,2,High,Evening,0.97,Low
+REM_0126,Organize Weekend Get-together,Social,1,0.5,1,Medium,Night,0.54,Medium
+REM_0127,Mentor Junior AI Students,Social,1,0.5,1,High,Afternoon,0.93,Medium
+REM_0128,Respond to High Priority Client Emails,Work,3,0.25,5,High,Night,0.66,High
+REM_0129,Attend Department Farewell,Social,14,2.0,3,Low,Evening,0.59,Low
+REM_0130,Submit Tuition Fees Payment,Financial,12,1.0,4,Low,Evening,0.6,Low
+REM_0131,Refill Prescription at Pharmacy,Health,7,0.5,3,Medium,Evening,0.68,Low
+REM_0132,Renew Vehicle Insurance Policy,Financial,1,0.5,4,Medium,Afternoon,0.76,High
+REM_0133,Backup Laptop Hard Drive,Personal,1,1.0,2,High,Afternoon,0.48,Medium
+REM_0134,Attend Friend's Birthday Dinner,Social,0,0.5,4,Medium,Evening,0.88,High
+REM_0135,Study for AI Midterms,Academic,2,2.0,4,High,Evening,0.77,High
+REM_0136,Deploy Application to Production,Work,3,2.0,5,Low,Morning,0.96,High
+REM_0137,Study for AI Midterms,Academic,1,4.0,4,Medium,Morning,0.55,High
+REM_0138,Pay Wi-Fi Broadband Bill,Financial,5,0.25,5,High,Afternoon,0.87,High
+REM_0139,Attend Department Farewell,Social,1,0.5,1,Medium,Night,0.88,Medium
+REM_0140,Pay Monthly Apartment Rent,Financial,3,1.0,5,Low,Morning,0.88,High
+REM_0141,Solve Data Science Problem Set,Academic,3,1.0,3,Low,Afternoon,0.61,Medium
+REM_0142,Participate in College Tech Fest,Social,2,1.0,3,Medium,Morning,0.74,High
+REM_0143,Clean and Organize Work Desk,Personal,12,0.25,2,Low,Night,0.95,Low
+REM_0144,Update Jira Sprint Backlog,Work,1,1.5,5,High,Evening,0.73,High
+REM_0145,Audit Monthly Expense Budget,Financial,10,0.5,5,High,Night,0.62,Medium
+REM_0146,Backup Laptop Hard Drive,Personal,0,2.0,2,Low,Night,0.91,Medium
+REM_0147,Review Monthly Bank Statement,Financial,3,0.25,5,Low,Evening,0.9,High
+REM_0148,Backup Laptop Hard Drive,Personal,8,0.5,1,High,Afternoon,0.83,Low
+REM_0149,Physiotherapy Session,Health,7,1.5,4,Low,Evening,0.74,Medium
+REM_0150,Team Standup Sync,Work,1,1.0,5,Medium,Evening,0.66,High
+REM_0151,Laundry and Dry Cleaning Pickup,Personal,4,0.5,4,Low,Afternoon,0.76,High
+REM_0152,Respond to High Priority Client Emails,Work,0,4.0,5,High,Afternoon,0.75,High
+REM_0153,Send Wedding Anniversary Wishes,Social,6,1.5,4,Low,Night,0.53,Medium
+REM_0154,Transfer Mutual Fund SIP,Financial,3,4.0,4,High,Night,0.94,High
+REM_0155,Pay Electricity & Utility Bill,Financial,4,6.0,2,Low,Night,0.89,Medium
+REM_0156,Audit Monthly Expense Budget,Financial,5,0.25,3,High,Morning,0.63,Medium
+REM_0157,Read 30 Pages of Book,Personal,8,0.5,1,Medium,Morning,0.66,Low
+REM_0158,Drink 2 Liters Water Goal,Health,3,1.5,3,Medium,Night,0.69,Medium
+REM_0159,Organize Digital Files & Photos,Personal,2,0.25,2,High,Afternoon,0.54,Medium
+REM_0160,Pay Monthly Apartment Rent,Financial,12,1.0,3,Medium,Night,0.79,Low
+REM_0161,Pay Electricity & Utility Bill,Financial,0,0.5,4,Medium,Evening,0.96,High
+REM_0162,Connect with Mentors on LinkedIn,Social,0,1.0,4,Medium,Afternoon,0.77,High
+REM_0163,File Income Tax Return,Financial,0,0.5,4,High,Morning,0.93,High
+REM_0164,Audit Monthly Expense Budget,Financial,0,1.0,4,High,Morning,0.48,High
+REM_0165,Prepare Presentation Slides,Academic,7,1.0,4,Medium,Afternoon,0.68,Medium
+REM_0166,File Income Tax Return,Financial,1,3.0,3,Low,Evening,0.95,Medium
+REM_0167,Transfer Mutual Fund SIP,Financial,3,1.5,3,Low,Night,0.67,Medium
+REM_0168,Annual Dental Checkup,Health,0,0.5,3,Medium,Evening,0.81,High
+REM_0169,Review Monthly Bank Statement,Financial,0,2.0,2,Low,Night,0.54,Medium
+REM_0170,Submit Final Semester Thesis,Academic,0,1.5,3,High,Morning,0.9,High
+REM_0171,Refill Prescription at Pharmacy,Health,8,1.5,3,High,Morning,0.56,Medium
+REM_0172,Call Parents and Family,Social,0,0.5,1,Low,Afternoon,0.46,Medium
+REM_0173,Client Sprint Review Meeting,Work,1,1.0,4,High,Afternoon,0.92,High
+REM_0174,Bug Triage and Code Review,Work,2,1.0,3,Medium,Morning,0.59,High
+REM_0175,Clean and Organize Work Desk,Personal,6,1.0,2,Medium,Evening,0.68,Medium
+REM_0176,Evening Gym Cardio Workout,Health,7,3.0,2,High,Morning,0.71,Medium
+REM_0177,Team Standup Sync,Work,10,1.0,5,Low,Morning,0.46,Medium
+REM_0178,Track Daily Calorie Intake,Health,6,0.25,3,High,Night,0.89,Medium
+REM_0179,Pay Health Insurance Premium,Financial,14,0.5,4,Low,Morning,0.59,Low
+REM_0180,Organize Digital Files & Photos,Personal,2,1.5,2,High,Afternoon,0.89,Medium
+REM_0181,Submit Final Semester Thesis,Academic,1,0.25,2,Medium,Morning,0.93,Medium
+REM_0182,Buy Weekly Groceries and Essentials,Personal,5,0.5,3,Medium,Night,0.93,Medium
+REM_0183,Community Volunteer Event,Social,3,1.0,2,Low,Evening,0.47,Medium
+REM_0184,Solve Data Science Problem Set,Academic,0,0.5,4,Medium,Morning,0.66,High
+REM_0185,Transfer Mutual Fund SIP,Financial,2,1.5,3,High,Night,0.61,Medium
+REM_0186,RSVP for Alumni Reunion,Social,6,1.5,4,Medium,Afternoon,0.56,High
+REM_0187,Participate in College Tech Fest,Social,0,1.0,1,High,Evening,0.48,High
+REM_0188,Renew Passport Documentation,Personal,2,0.25,3,Medium,Night,0.49,Medium
+REM_0189,Pay Health Insurance Premium,Financial,7,1.5,4,High,Evening,0.68,Medium
+REM_0190,Refill Prescription at Pharmacy,Health,8,0.5,4,Low,Evening,0.76,Medium
+REM_0191,Pay Monthly Apartment Rent,Financial,3,4.0,2,Medium,Night,0.52,Medium
+REM_0192,Take Prescribed Morning Medication,Health,1,3.0,4,Medium,Evening,0.84,High
+REM_0193,Update Jira Sprint Backlog,Work,8,1.5,4,Low,Evening,0.9,Medium
+REM_0194,Annual Dental Checkup,Health,2,4.0,5,Medium,Evening,0.47,High
+REM_0195,Buy Weekly Groceries and Essentials,Personal,7,0.5,4,High,Afternoon,0.75,Medium
+REM_0196,Study for AI Midterms,Academic,12,4.0,5,High,Night,0.7,Medium
+REM_0197,Submit Tuition Fees Payment,Financial,10,0.5,5,Low,Night,0.89,Medium
+REM_0198,Attend Department Farewell,Social,2,0.25,1,Medium,Night,0.82,Medium
+REM_0199,Prepare for Viva Exam,Academic,2,0.25,4,Medium,Afternoon,0.62,High
+REM_0200,Pay Health Insurance Premium,Financial,2,3.0,4,Low,Evening,0.78,High
+REM_0201,Visit Grandparents at Weekend,Social,2,3.0,1,Medium,Night,0.46,Medium
+REM_0202,Renew Passport Documentation,Personal,12,6.0,3,Medium,Night,0.64,Medium
+REM_0203,Participate in College Tech Fest,Social,7,1.0,2,Medium,Evening,0.78,Low
+REM_0204,Send Festival Greeting Messages,Social,3,0.5,3,Medium,Evening,0.51,Medium
+REM_0205,Refill Prescription at Pharmacy,Health,3,0.5,3,Low,Afternoon,0.57,Medium
+REM_0206,Doctor Consultation Appointment,Health,3,0.5,4,High,Afternoon,0.95,High
+REM_0207,Deploy Application to Production,Work,8,1.0,2,High,Night,0.92,Low
+REM_0208,Morning Yoga and Meditation,Health,5,6.0,3,High,Evening,0.57,High
+REM_0209,Study for AI Midterms,Academic,12,1.5,4,Medium,Afternoon,0.72,Low
+REM_0210,Evening Gym Cardio Workout,Health,2,2.0,3,Medium,Morning,0.64,Medium
+REM_0211,Participate in College Tech Fest,Social,0,3.0,4,Low,Evening,0.94,High
+REM_0212,Submit ML Lab Assignment,Academic,6,2.0,3,High,Evening,0.57,Medium
+REM_0213,RSVP for Alumni Reunion,Social,2,1.0,2,High,Night,0.76,Medium
+REM_0214,Submit ML Lab Assignment,Academic,10,3.0,5,High,Evening,0.88,Medium
+REM_0215,Renew Vehicle Insurance Policy,Financial,6,0.25,4,Medium,Evening,0.67,Medium
+REM_0216,Client Sprint Review Meeting,Work,7,0.25,4,Medium,Night,0.57,Medium
+REM_0217,Prepare for Viva Exam,Academic,6,3.0,2,Medium,Night,0.71,Medium
+REM_0218,Group Project Discussion,Academic,8,1.5,3,High,Morning,0.75,Medium
+REM_0219,Bug Triage and Code Review,Work,2,2.0,5,High,Evening,0.8,High
+REM_0220,Study for AI Midterms,Academic,6,1.5,4,Low,Night,0.85,Medium
+REM_0221,Home Appliance Maintenance,Personal,1,3.0,3,High,Afternoon,0.47,High
+REM_0222,Read 30 Pages of Book,Personal,2,0.5,3,Medium,Night,0.88,Medium
+REM_0223,Track Daily Calorie Intake,Health,8,0.25,4,Medium,Evening,0.6,Medium
+REM_0224,Home Appliance Maintenance,Personal,6,1.5,1,Low,Morning,0.74,Low
+REM_0225,Security Audit Review,Work,7,2.0,2,Low,Evening,0.74,Low
+REM_0226,Attend Friend's Birthday Dinner,Social,6,0.25,4,Low,Afternoon,0.95,Medium
+REM_0227,System Architecture Review,Work,6,0.5,2,Low,Afternoon,0.83,Low
+REM_0228,Solve Data Science Problem Set,Academic,3,0.25,4,Medium,Night,0.91,Medium
+REM_0229,Take Prescribed Morning Medication,Health,14,1.5,5,Low,Evening,0.52,Medium
+REM_0230,Mentor Junior AI Students,Social,6,0.5,2,High,Night,0.98,Medium
+REM_0231,Prepare Presentation Slides,Academic,3,0.5,4,Low,Evening,0.87,Medium
+REM_0232,Visit Grandparents at Weekend,Social,0,1.5,3,High,Afternoon,0.59,High
+REM_0233,Credit Card Due Payment,Financial,14,1.0,3,High,Afternoon,0.95,Low
+REM_0234,RSVP for Alumni Reunion,Social,3,6.0,1,Medium,Afternoon,0.67,Medium
+REM_0235,Submit ML Lab Assignment,Academic,10,0.5,3,Low,Evening,0.47,Low
+REM_0236,Organize Digital Files & Photos,Personal,10,5.0,2,High,Evening,0.55,Medium
+REM_0237,Credit Card Due Payment,Financial,10,2.0,5,Medium,Evening,0.9,Medium
+REM_0238,Organize Weekend Get-together,Social,1,4.0,1,Medium,Night,0.78,Medium
+REM_0239,Credit Card Due Payment,Financial,8,0.25,4,High,Morning,0.52,Medium
+REM_0240,Pay Health Insurance Premium,Financial,1,0.25,4,Medium,Evening,0.76,High
+REM_0241,Prepare for Viva Exam,Academic,2,0.5,5,Low,Morning,0.69,High
+REM_0242,Mentor Junior AI Students,Social,5,1.5,1,High,Morning,0.91,Low
+REM_0243,Update Jira Sprint Backlog,Work,7,1.0,2,High,Night,0.51,Medium
+REM_0244,Evening Gym Cardio Workout,Health,5,1.0,5,High,Night,0.46,High
+REM_0245,Send Festival Greeting Messages,Social,2,0.25,2,Low,Night,0.64,Medium
+REM_0246,Book Blood Test Diagnostics,Health,5,2.0,4,Medium,Evening,0.56,Medium
+REM_0247,Attend Friend's Birthday Dinner,Social,1,1.5,1,Low,Evening,0.82,Medium
+REM_0248,Pay Health Insurance Premium,Financial,7,1.5,5,Medium,Evening,0.87,Medium
+REM_0249,Organize Weekend Get-together,Social,2,0.25,3,High,Morning,0.92,High
+REM_0250,Credit Card Due Payment,Financial,4,1.0,4,Medium,Evening,0.84,High
+REM_0251,Doctor Consultation Appointment,Health,0,0.5,2,Medium,Morning,0.53,Medium
+REM_0252,Participate in College Tech Fest,Social,14,0.5,1,Medium,Night,0.87,Low
+REM_0253,Study for AI Midterms,Academic,6,1.0,4,High,Evening,0.83,Medium
+REM_0254,Backup Laptop Hard Drive,Personal,1,0.25,3,High,Night,0.47,High
+REM_0255,Study for AI Midterms,Academic,2,3.0,4,Medium,Afternoon,0.84,High
+REM_0256,Physiotherapy Session,Health,3,6.0,3,High,Night,0.47,High
+REM_0257,Submit ML Lab Assignment,Academic,10,1.0,4,High,Afternoon,0.83,Medium
+REM_0258,RSVP for Alumni Reunion,Social,12,0.5,2,Medium,Morning,0.76,Low
+REM_0259,Read 30 Pages of Book,Personal,12,1.5,1,Low,Afternoon,0.78,Low
+REM_0260,Submit Seminar Abstract,Academic,7,0.5,5,Low,Afternoon,0.58,Medium
+REM_0261,Pay Health Insurance Premium,Financial,14,3.0,3,Medium,Evening,0.71,Low
+REM_0262,Renew Vehicle Insurance Policy,Financial,4,1.0,4,Medium,Afternoon,0.76,Medium
+REM_0263,Submit Tuition Fees Payment,Financial,1,5.0,3,Low,Night,0.59,Medium
+REM_0264,Database Migration Check,Work,7,5.0,2,High,Afternoon,0.69,Medium
+REM_0265,Submit Research Paper Draft,Academic,2,0.5,2,Medium,Evening,0.73,Medium
+REM_0266,Book Train / Flight Tickets,Personal,3,1.5,1,Low,Evening,0.82,Low
+REM_0267,Mentor Junior AI Students,Social,1,0.25,1,High,Night,0.84,Medium
+REM_0268,Update Jira Sprint Backlog,Work,10,1.0,5,High,Night,0.91,High
+REM_0269,Annual Dental Checkup,Health,1,0.5,2,High,Night,0.48,Medium
+REM_0270,Transfer Mutual Fund SIP,Financial,0,1.0,2,Low,Afternoon,0.94,Medium
+REM_0271,Read 30 Pages of Book,Personal,2,0.25,2,Low,Night,0.53,Medium
+REM_0272,Attend Guest Lecture on Deep Learning,Academic,4,1.0,4,High,Night,0.8,High
+REM_0273,Organize Weekend Get-together,Social,1,0.5,1,Medium,Afternoon,0.82,Medium
+REM_0274,Pay Electricity & Utility Bill,Financial,14,1.5,2,Low,Evening,0.69,Low
+REM_0275,Submit Seminar Abstract,Academic,10,1.5,3,Low,Night,0.89,Low
+REM_0276,Submit Final Semester Thesis,Academic,4,3.0,4,Low,Night,0.75,High
+REM_0277,RSVP for Alumni Reunion,Social,0,1.5,4,Low,Night,0.81,High
+REM_0278,Annual Dental Checkup,Health,3,0.25,4,High,Night,0.8,High
+REM_0279,Attend Friend's Birthday Dinner,Social,14,5.0,1,Medium,Night,0.67,Low
+REM_0280,Eye Specialist Appointment,Health,5,3.0,5,High,Night,0.66,High
+REM_0281,Buy Weekly Groceries and Essentials,Personal,2,2.0,3,High,Morning,0.85,High
+REM_0282,Security Audit Review,Work,8,1.0,2,High,Evening,0.45,Medium
+REM_0283,Vendor Contract Follow-up,Work,2,1.0,3,Low,Night,0.82,Medium
+REM_0284,Prepare Presentation Slides,Academic,2,0.5,3,High,Morning,0.49,Medium
+REM_0285,File Income Tax Return,Financial,5,1.5,4,High,Evening,0.7,High
+REM_0286,Submit ML Lab Assignment,Academic,4,0.25,4,Medium,Morning,0.63,Medium
+REM_0287,Annual Dental Checkup,Health,3,1.0,3,Medium,Night,0.73,High
+REM_0288,Deploy Application to Production,Work,8,5.0,5,High,Night,0.46,High
+REM_0289,Cook Meal Prep for Tomorrow,Personal,1,1.5,1,Low,Afternoon,0.93,Medium
+REM_0290,Submit Weekly Progress Report,Work,0,1.0,5,High,Night,0.5,High
+REM_0291,Cook Meal Prep for Tomorrow,Personal,4,0.5,1,Low,Night,0.61,Low
+REM_0292,Car Servicing and Oil Change,Personal,2,1.5,2,Low,Night,0.59,Medium
+REM_0293,Mentor Junior AI Students,Social,3,0.5,1,Medium,Evening,0.81,Medium
+REM_0294,Call Parents and Family,Social,7,1.0,1,Medium,Evening,0.59,Low
+REM_0295,Participate in College Tech Fest,Social,14,2.0,2,Low,Morning,0.74,Low
+REM_0296,Transfer Mutual Fund SIP,Financial,14,2.0,4,High,Evening,0.92,Low
+REM_0297,Organize Weekend Get-together,Social,2,1.5,1,High,Evening,0.67,Medium
+REM_0298,Review Monthly Bank Statement,Financial,8,2.0,3,Low,Night,0.67,Low
+REM_0299,Credit Card Due Payment,Financial,6,1.5,2,Low,Night,0.69,Low
+REM_0300,Water Indoor Plants,Personal,7,0.5,3,High,Evening,0.5,Medium
+REM_0301,Mentor Junior AI Students,Social,0,1.5,2,Low,Night,0.74,Medium
+REM_0302,Take Prescribed Morning Medication,Health,5,6.0,4,High,Morning,0.52,High
+REM_0303,Organize Digital Files & Photos,Personal,6,1.0,2,Medium,Evening,0.83,Medium
+REM_0304,Database Migration Check,Work,2,0.25,2,Medium,Afternoon,0.92,Medium
+REM_0305,Send Wedding Anniversary Wishes,Social,1,0.5,1,High,Evening,0.64,Medium
+REM_0306,Attend Department Farewell,Social,0,0.5,3,High,Afternoon,0.74,High
+REM_0307,Attend Friend's Birthday Dinner,Social,10,1.0,3,High,Morning,0.62,Medium
+REM_0308,Physiotherapy Session,Health,14,1.0,4,Low,Evening,0.84,Low
+REM_0309,RSVP for Alumni Reunion,Social,4,1.0,1,Low,Evening,0.96,Low
+REM_0310,Morning Yoga and Meditation,Health,1,0.25,4,Medium,Afternoon,0.69,High
+REM_0311,Bug Triage and Code Review,Work,7,1.5,3,High,Evening,0.87,Medium
+REM_0312,Renew Passport Documentation,Personal,14,1.0,4,Medium,Afternoon,0.9,Low
+REM_0313,Physiotherapy Session,Health,4,0.25,4,Medium,Evening,0.85,Medium
+REM_0314,Submit Seminar Abstract,Academic,8,0.25,4,Low,Afternoon,0.61,Medium
+REM_0315,Security Audit Review,Work,2,0.25,3,High,Night,0.95,Medium
+REM_0316,Water Indoor Plants,Personal,3,1.5,2,Low,Night,0.72,Medium
+REM_0317,Submit Research Paper Draft,Academic,12,6.0,4,High,Morning,0.9,Medium
+REM_0318,Transfer Mutual Fund SIP,Financial,3,3.0,5,High,Evening,0.88,High
+REM_0319,Read 30 Pages of Book,Personal,8,0.25,1,High,Evening,0.66,Low
+REM_0320,Prepare Presentation Slides,Academic,3,1.5,5,Low,Night,0.89,High
+REM_0321,Group Project Discussion,Academic,1,4.0,5,High,Evening,0.71,High
+REM_0322,Clean and Organize Work Desk,Personal,1,1.0,2,High,Morning,0.53,Medium
+REM_0323,Send Festival Greeting Messages,Social,3,0.25,1,High,Evening,0.52,Medium
+REM_0324,Organize Weekend Get-together,Social,14,0.5,2,Low,Afternoon,0.72,Low
+REM_0325,Submit ML Lab Assignment,Academic,3,1.5,2,Medium,Night,0.56,Medium
+REM_0326,Prepare for Viva Exam,Academic,1,2.0,2,Low,Afternoon,0.69,Medium
+REM_0327,Renew Vehicle Insurance Policy,Financial,0,0.25,5,Medium,Night,0.82,High
+REM_0328,Organize Digital Files & Photos,Personal,6,1.0,1,High,Afternoon,0.98,Low
+REM_0329,Recharge Mobile Prepaid Plan,Financial,8,0.5,4,Low,Night,0.78,Low
+REM_0330,Read 30 Pages of Book,Personal,1,1.0,3,Medium,Morning,0.55,High
+REM_0331,Community Volunteer Event,Social,3,2.0,2,Low,Night,0.84,Medium
+REM_0332,Pay Monthly Apartment Rent,Financial,0,2.0,3,Medium,Morning,0.52,Medium
+REM_0333,Community Volunteer Event,Social,4,0.25,1,High,Evening,0.58,Medium
+REM_0334,Solve Data Science Problem Set,Academic,1,1.0,4,Medium,Afternoon,0.9,High
+REM_0335,Submit Seminar Abstract,Academic,0,0.5,4,Low,Afternoon,0.62,High
+REM_0336,Connect with Mentors on LinkedIn,Social,3,1.0,2,High,Morning,0.87,Medium
+REM_0337,Attend Guest Lecture on Deep Learning,Academic,10,2.0,5,Low,Afternoon,0.62,Medium
+REM_0338,Clean and Organize Work Desk,Personal,2,0.25,3,Low,Afternoon,0.93,Medium
+REM_0339,Clean and Organize Work Desk,Personal,4,1.5,2,Low,Evening,0.92,Medium
+REM_0340,Database Migration Check,Work,0,0.5,4,Low,Evening,0.84,High
+REM_0341,Bug Triage and Code Review,Work,4,0.25,4,High,Evening,0.49,High
+REM_0342,Submit Weekly Progress Report,Work,0,5.0,2,High,Morning,0.84,High
+REM_0343,Client Sprint Review Meeting,Work,3,0.5,3,Medium,Afternoon,0.86,Medium
+REM_0344,Water Indoor Plants,Personal,1,1.5,1,Low,Afternoon,0.86,Medium
+REM_0345,Take Prescribed Morning Medication,Health,2,0.25,2,Low,Night,0.96,Medium
+REM_0346,Laundry and Dry Cleaning Pickup,Personal,6,0.5,2,High,Morning,0.51,Medium
+REM_0347,Renew Vehicle Insurance Policy,Financial,5,1.5,5,Medium,Morning,0.73,High
+REM_0348,Submit Tuition Fees Payment,Financial,14,1.0,4,Low,Morning,0.85,Low
+REM_0349,Connect with Mentors on LinkedIn,Social,8,0.25,3,High,Evening,0.63,Medium
+REM_0350,Recharge Mobile Prepaid Plan,Financial,3,4.0,4,Low,Morning,0.58,Medium
+REM_0351,Pay Wi-Fi Broadband Bill,Financial,1,3.0,3,Medium,Morning,0.79,High
+REM_0352,Pay Health Insurance Premium,Financial,10,4.0,5,Medium,Morning,0.58,Medium
+REM_0353,Attend Guest Lecture on Deep Learning,Academic,7,2.0,4,High,Afternoon,0.84,Medium
+REM_0354,Complete Mini Project Documentation,Academic,1,6.0,4,Medium,Evening,0.95,High
+REM_0355,Audit Monthly Expense Budget,Financial,0,0.25,3,High,Evening,0.83,High
+REM_0356,Submit Tuition Fees Payment,Financial,4,1.5,5,High,Night,0.74,High
+REM_0357,Submit Final Semester Thesis,Academic,5,0.5,4,Low,Afternoon,0.75,Medium
+REM_0358,Renew Vehicle Insurance Policy,Financial,6,0.5,5,Low,Night,0.69,Medium
+REM_0359,Physiotherapy Session,Health,0,1.5,3,Medium,Night,0.98,High
+REM_0360,Attend Friend's Birthday Dinner,Social,8,1.0,1,Medium,Night,0.84,Low
+REM_0361,Eye Specialist Appointment,Health,5,1.0,3,Medium,Evening,0.87,Medium
+REM_0362,Security Audit Review,Work,7,1.5,2,Medium,Morning,0.56,Low
+REM_0363,Prepare for Viva Exam,Academic,14,0.5,3,Low,Night,0.53,Low
+REM_0364,Submit Final Semester Thesis,Academic,14,1.0,3,High,Evening,0.83,Low
+REM_0365,System Architecture Review,Work,10,1.0,4,Low,Evening,0.67,Low
+REM_0366,Attend Friend's Birthday Dinner,Social,8,1.0,1,Medium,Evening,0.7,Low
+REM_0367,Organize Weekend Get-together,Social,6,1.0,1,High,Morning,0.75,Medium
+REM_0368,Track Daily Calorie Intake,Health,6,0.5,5,Medium,Evening,0.89,High
+REM_0369,Group Project Discussion,Academic,4,0.25,2,High,Afternoon,0.63,Medium
+REM_0370,Security Audit Review,Work,8,1.0,4,Medium,Afternoon,0.53,Medium
+REM_0371,Attend Guest Lecture on Deep Learning,Academic,2,0.25,4,High,Evening,0.57,High
+REM_0372,Submit Research Paper Draft,Academic,14,1.5,5,High,Afternoon,0.67,Medium
+REM_0373,Submit Tuition Fees Payment,Financial,6,0.25,5,High,Morning,0.67,High
+REM_0374,Cook Meal Prep for Tomorrow,Personal,5,0.5,2,High,Evening,0.64,Medium
+REM_0375,Complete Mini Project Documentation,Academic,2,0.25,2,Medium,Evening,0.89,Medium
+REM_0376,Annual Dental Checkup,Health,2,0.5,5,Low,Afternoon,0.68,High
+REM_0377,Database Migration Check,Work,10,0.5,5,High,Night,0.88,Medium
+REM_0378,Complete Mini Project Documentation,Academic,1,1.5,2,High,Morning,0.71,Medium
+REM_0379,Submit Final Semester Thesis,Academic,3,2.0,4,High,Afternoon,0.53,High
+REM_0380,Pay Wi-Fi Broadband Bill,Financial,7,5.0,4,Medium,Evening,0.49,Medium
+REM_0381,Prepare Product Pitch Deck,Work,0,0.5,3,Medium,Evening,0.58,High
+REM_0382,Home Appliance Maintenance,Personal,2,1.0,3,Low,Morning,0.86,Medium
+REM_0383,Bug Triage and Code Review,Work,0,0.25,4,High,Morning,0.48,High
+REM_0384,Attend Friend's Birthday Dinner,Social,3,0.25,3,Medium,Night,0.8,Medium
+REM_0385,Organize Weekend Get-together,Social,14,4.0,2,Medium,Night,0.48,Low
+REM_0386,Review Monthly Bank Statement,Financial,7,0.5,5,Low,Morning,0.8,Medium
+REM_0387,Book Blood Test Diagnostics,Health,1,1.0,4,Low,Evening,0.97,Medium
+REM_0388,Connect with Mentors on LinkedIn,Social,1,0.5,1,High,Night,0.58,Medium
+REM_0389,Cook Meal Prep for Tomorrow,Personal,10,1.0,2,Medium,Morning,0.51,Low
+REM_0390,Respond to High Priority Client Emails,Work,0,1.0,5,High,Morning,0.49,High
+REM_0391,Study for AI Midterms,Academic,4,0.5,4,Medium,Afternoon,0.95,High
+REM_0392,Team Standup Sync,Work,4,1.5,4,Medium,Evening,0.74,High
+REM_0393,Submit ML Lab Assignment,Academic,0,2.0,4,Medium,Night,0.69,High
+REM_0394,Bug Triage and Code Review,Work,1,2.0,3,Medium,Afternoon,0.73,High
+REM_0395,Renew Passport Documentation,Personal,1,3.0,3,High,Evening,0.91,High
+REM_0396,Solve Data Science Problem Set,Academic,14,0.25,5,High,Morning,0.48,Low
+REM_0397,Pay Electricity & Utility Bill,Financial,4,1.0,5,Medium,Morning,0.71,High
+REM_0398,Track Daily Calorie Intake,Health,8,2.0,3,Medium,Night,0.96,Medium
+REM_0399,Connect with Mentors on LinkedIn,Social,1,0.5,2,Medium,Evening,0.87,Medium
+REM_0400,Solve Data Science Problem Set,Academic,8,4.0,3,Low,Evening,0.73,Medium
+REM_0401,Database Migration Check,Work,1,2.0,4,Medium,Evening,0.62,High
+REM_0402,Solve Data Science Problem Set,Academic,1,1.5,5,Low,Afternoon,0.53,High
+REM_0403,Audit Monthly Expense Budget,Financial,4,0.25,4,Medium,Morning,0.92,Medium
+REM_0404,Review Monthly Bank Statement,Financial,14,6.0,4,High,Evening,0.8,Medium
+REM_0405,Prepare Product Pitch Deck,Work,6,3.0,3,Low,Morning,0.68,Medium
+REM_0406,Cook Meal Prep for Tomorrow,Personal,7,0.25,3,Low,Afternoon,0.84,Medium
+REM_0407,Annual Dental Checkup,Health,1,2.0,5,High,Afternoon,0.74,High
+REM_0408,Submit Weekly Progress Report,Work,4,1.0,5,Low,Evening,0.64,High
+REM_0409,Bug Triage and Code Review,Work,4,0.5,5,High,Afternoon,0.54,High
+REM_0410,Attend Friend's Birthday Dinner,Social,1,0.25,1,Low,Night,0.63,Medium
+REM_0411,Audit Monthly Expense Budget,Financial,4,1.5,4,High,Night,0.78,High
+REM_0412,Visit Grandparents at Weekend,Social,4,1.5,4,High,Evening,0.52,High
+REM_0413,Community Volunteer Event,Social,6,1.5,1,Low,Night,0.49,Low
+REM_0414,Submit Seminar Abstract,Academic,2,0.5,5,Medium,Evening,0.79,High
+REM_0415,Track Daily Calorie Intake,Health,6,0.5,4,Low,Evening,0.56,Medium
+REM_0416,Laundry and Dry Cleaning Pickup,Personal,10,2.0,3,Medium,Night,0.8,Low
+REM_0417,Pay Electricity & Utility Bill,Financial,2,1.5,5,Low,Evening,0.75,High
+REM_0418,Doctor Consultation Appointment,Health,4,1.0,5,High,Morning,0.65,High
+REM_0419,Home Appliance Maintenance,Personal,14,1.0,1,High,Night,0.47,Low
+REM_0420,Audit Monthly Expense Budget,Financial,2,0.5,5,High,Morning,0.93,High
+REM_0421,Audit Monthly Expense Budget,Financial,7,0.25,5,High,Afternoon,0.96,Medium
+REM_0422,Track Daily Calorie Intake,Health,8,3.0,3,Medium,Afternoon,0.51,Medium
+REM_0423,Submit Seminar Abstract,Academic,7,0.25,4,Low,Evening,0.58,Medium
+REM_0424,Attend Friend's Birthday Dinner,Social,2,0.5,2,High,Afternoon,0.61,Medium
+REM_0425,Study for AI Midterms,Academic,7,3.0,2,High,Night,0.9,Medium
+REM_0426,Submit Tuition Fees Payment,Financial,10,0.25,3,High,Afternoon,0.58,Medium
+REM_0427,Annual Dental Checkup,Health,8,1.0,2,Medium,Night,0.98,Low
+REM_0428,Transfer Mutual Fund SIP,Financial,0,1.0,5,High,Morning,0.51,High
+REM_0429,Connect with Mentors on LinkedIn,Social,0,1.5,4,Medium,Morning,0.89,High
+REM_0430,Doctor Consultation Appointment,Health,4,0.5,4,High,Night,0.68,High
+REM_0431,Drink 2 Liters Water Goal,Health,7,3.0,4,High,Afternoon,0.68,High
+REM_0432,Doctor Consultation Appointment,Health,5,0.5,5,High,Afternoon,0.72,High
+REM_0433,Drink 2 Liters Water Goal,Health,1,1.0,3,High,Night,0.8,High
+REM_0434,Database Migration Check,Work,7,1.5,4,High,Morning,0.49,Medium
+REM_0435,Take Multivitamins & Supplements,Health,2,1.0,3,Medium,Evening,0.47,Medium
+REM_0436,Security Audit Review,Work,14,1.0,3,High,Morning,0.55,Low
+REM_0437,Connect with Mentors on LinkedIn,Social,5,0.5,1,Medium,Evening,0.72,Low
+REM_0438,Attend Guest Lecture on Deep Learning,Academic,8,1.0,4,Medium,Afternoon,0.61,Medium
+REM_0439,Prepare Product Pitch Deck,Work,12,0.25,3,Medium,Afternoon,0.78,Low
+REM_0440,Bug Triage and Code Review,Work,4,1.0,5,Low,Morning,0.82,High
+REM_0441,Doctor Consultation Appointment,Health,14,0.5,2,High,Morning,0.66,Low
+REM_0442,Community Volunteer Event,Social,12,1.5,3,High,Afternoon,0.61,Low
+REM_0443,Read 30 Pages of Book,Personal,8,2.0,4,Low,Afternoon,0.45,Medium
+REM_0444,Vendor Contract Follow-up,Work,2,1.5,2,High,Afternoon,0.81,Medium
+REM_0445,Send Festival Greeting Messages,Social,1,1.0,2,Low,Night,0.65,Medium
+REM_0446,Eye Specialist Appointment,Health,7,0.25,2,High,Afternoon,0.64,Low
+REM_0447,Audit Monthly Expense Budget,Financial,12,1.5,4,Medium,Night,0.64,Low
+REM_0448,System Architecture Review,Work,6,1.5,5,Low,Evening,0.91,Medium
+REM_0449,Pay Monthly Apartment Rent,Financial,7,3.0,2,Medium,Night,0.49,Low
+REM_0450,Review Monthly Bank Statement,Financial,0,0.5,4,Medium,Night,0.71,High
+REM_0451,Deploy Application to Production,Work,5,0.25,2,High,Afternoon,0.75,Medium
+REM_0452,Take Prescribed Morning Medication,Health,6,1.5,5,High,Night,0.68,High
+REM_0453,Take Multivitamins & Supplements,Health,6,0.5,3,Low,Morning,0.87,Medium
+REM_0454,Doctor Consultation Appointment,Health,8,4.0,5,Low,Evening,0.68,Medium
+REM_0455,Submit Tuition Fees Payment,Financial,2,1.0,4,Low,Night,0.77,High
+REM_0456,Study for AI Midterms,Academic,3,1.0,3,Medium,Evening,0.53,Medium
+REM_0457,Solve Data Science Problem Set,Academic,10,0.5,3,Low,Night,0.46,Low
+REM_0458,Water Indoor Plants,Personal,3,1.0,1,Low,Night,0.61,Medium
+REM_0459,Attend Guest Lecture on Deep Learning,Academic,6,1.0,4,Low,Morning,0.57,Medium
+REM_0460,Doctor Consultation Appointment,Health,6,1.0,2,High,Evening,0.46,Medium
+REM_0461,Bug Triage and Code Review,Work,4,1.0,5,Low,Evening,0.47,High
+REM_0462,Pay Health Insurance Premium,Financial,1,2.0,2,Low,Night,0.69,Medium
+REM_0463,Audit Monthly Expense Budget,Financial,2,0.25,5,Low,Morning,0.96,High
+REM_0464,Submit Research Paper Draft,Academic,5,6.0,5,Low,Afternoon,0.6,High
+REM_0465,Organize Digital Files & Photos,Personal,14,1.0,2,High,Night,0.63,Low
+REM_0466,Submit Research Paper Draft,Academic,5,2.0,4,Low,Evening,0.89,Medium
+REM_0467,Submit ML Lab Assignment,Academic,4,0.5,3,Low,Night,0.55,Medium
+REM_0468,Visit Grandparents at Weekend,Social,2,1.0,4,Medium,Morning,0.63,High
+REM_0469,Submit Seminar Abstract,Academic,5,1.0,2,High,Morning,0.78,Low
+REM_0470,Participate in College Tech Fest,Social,14,1.5,3,High,Afternoon,0.75,Low
+REM_0471,RSVP for Alumni Reunion,Social,6,1.0,1,Medium,Night,0.47,Medium
+REM_0472,Group Project Discussion,Academic,2,3.0,5,Medium,Afternoon,0.83,High
+REM_0473,Read 30 Pages of Book,Personal,4,0.25,3,Low,Morning,0.87,Medium
+REM_0474,Water Indoor Plants,Personal,2,4.0,3,Low,Morning,0.53,Medium
+REM_0475,Renew Vehicle Insurance Policy,Financial,4,1.0,5,Low,Night,0.91,Medium
+REM_0476,Drink 2 Liters Water Goal,Health,2,2.0,3,High,Morning,0.65,High
+REM_0477,Doctor Consultation Appointment,Health,4,1.0,4,Medium,Afternoon,0.91,Medium
+REM_0478,Connect with Mentors on LinkedIn,Social,8,1.0,3,High,Morning,0.96,Medium
+REM_0479,Organize Digital Files & Photos,Personal,1,3.0,1,Medium,Afternoon,0.68,Medium
+REM_0480,Attend Guest Lecture on Deep Learning,Academic,6,0.25,5,High,Evening,0.7,Medium
+REM_0481,RSVP for Alumni Reunion,Social,6,1.5,3,High,Night,0.52,Medium
+REM_0482,Send Festival Greeting Messages,Social,8,0.5,1,High,Afternoon,0.96,Low
+REM_0483,Submit Weekly Progress Report,Work,0,1.5,5,High,Night,0.89,High
+REM_0484,Submit Research Paper Draft,Academic,7,2.0,2,Low,Morning,0.86,Low
+REM_0485,Client Sprint Review Meeting,Work,6,2.0,5,Medium,Evening,0.78,High
+REM_0486,Read 30 Pages of Book,Personal,0,1.0,2,High,Night,0.48,Medium
+REM_0487,Take Prescribed Morning Medication,Health,3,2.0,2,High,Afternoon,0.95,Medium
+REM_0488,Annual Dental Checkup,Health,0,2.0,4,Low,Evening,0.82,High
+REM_0489,Doctor Consultation Appointment,Health,0,1.0,2,Medium,Night,0.61,Medium
+REM_0490,Pay Health Insurance Premium,Financial,8,1.0,5,Medium,Night,0.93,Medium
+REM_0491,Evening Gym Cardio Workout,Health,2,0.5,4,Medium,Night,0.79,High
+REM_0492,Take Multivitamins & Supplements,Health,3,0.25,4,Medium,Morning,0.92,High
+REM_0493,Organize Weekend Get-together,Social,4,1.0,2,Low,Night,0.78,Medium
+REM_0494,Car Servicing and Oil Change,Personal,2,2.0,3,High,Evening,0.88,High
+REM_0495,Doctor Consultation Appointment,Health,5,0.25,4,Low,Evening,0.86,Medium
+REM_0496,Mentor Junior AI Students,Social,2,1.5,1,Medium,Night,0.48,Low
+REM_0497,Organize Digital Files & Photos,Personal,7,0.25,1,Medium,Afternoon,0.72,Low
+REM_0498,Send Festival Greeting Messages,Social,8,0.5,1,Medium,Night,0.84,Low
+REM_0499,Submit Final Semester Thesis,Academic,2,1.0,2,Medium,Night,0.59,Medium
+REM_0500,Eye Specialist Appointment,Health,8,1.0,5,Low,Morning,0.93,Medium
+REM_0501,Connect with Mentors on LinkedIn,Social,3,0.25,4,Medium,Evening,0.81,Medium
+REM_0502,Organize Digital Files & Photos,Personal,6,0.25,3,High,Afternoon,0.54,Medium
+REM_0503,Complete Mini Project Documentation,Academic,7,5.0,4,High,Night,0.85,High
+REM_0504,Complete Mini Project Documentation,Academic,2,2.0,2,Low,Afternoon,0.79,Medium
+REM_0505,Community Volunteer Event,Social,0,5.0,2,Medium,Night,0.72,Medium
+REM_0506,Buy Weekly Groceries and Essentials,Personal,1,1.0,2,High,Afternoon,0.48,Medium
+REM_0507,Send Festival Greeting Messages,Social,7,2.0,2,Medium,Evening,0.9,Medium
+REM_0508,Credit Card Due Payment,Financial,4,0.5,5,High,Afternoon,0.81,High
+REM_0509,Water Indoor Plants,Personal,5,0.25,1,Medium,Evening,0.8,Low
+REM_0510,Mentor Junior AI Students,Social,6,1.5,2,Low,Morning,0.56,Medium
+REM_0511,Submit Final Semester Thesis,Academic,10,1.0,3,Low,Night,0.48,Low
+REM_0512,Read 30 Pages of Book,Personal,2,0.25,3,High,Morning,0.65,Medium
+REM_0513,Drink 2 Liters Water Goal,Health,2,0.25,2,High,Night,0.67,Medium
+REM_0514,Database Migration Check,Work,4,0.25,4,Medium,Night,0.7,Medium
+REM_0515,Submit Weekly Progress Report,Work,14,1.5,4,Low,Morning,0.62,Low
+REM_0516,File Income Tax Return,Financial,4,0.25,5,High,Night,0.46,High
+REM_0517,Prepare Presentation Slides,Academic,7,0.25,5,Medium,Evening,0.59,Medium
+REM_0518,Attend Friend's Birthday Dinner,Social,3,0.25,2,High,Evening,0.61,Medium
+REM_0519,Evening Gym Cardio Workout,Health,6,2.0,5,High,Afternoon,0.46,High
+REM_0520,Take Multivitamins & Supplements,Health,8,1.0,4,Low,Morning,0.61,Medium
+REM_0521,Bug Triage and Code Review,Work,0,0.5,3,Low,Night,0.71,Medium
+REM_0522,Attend Guest Lecture on Deep Learning,Academic,0,4.0,5,High,Evening,0.87,High
+REM_0523,Submit Tuition Fees Payment,Financial,14,5.0,4,Low,Morning,0.49,Low
+REM_0524,Submit Research Paper Draft,Academic,1,1.5,2,Medium,Night,0.86,Medium
+REM_0525,Read 30 Pages of Book,Personal,5,2.0,1,Medium,Morning,0.79,Medium
+REM_0526,Prepare Product Pitch Deck,Work,2,4.0,3,High,Morning,0.6,High
+REM_0527,Renew Vehicle Insurance Policy,Financial,4,1.5,5,High,Evening,0.48,High
+REM_0528,System Architecture Review,Work,1,1.0,5,High,Afternoon,0.58,High
+REM_0529,Respond to High Priority Client Emails,Work,4,0.25,4,High,Morning,0.6,High
+REM_0530,Revise Machine Learning Notes,Academic,5,0.25,4,Low,Evening,0.54,Medium
+REM_0531,Bug Triage and Code Review,Work,4,0.25,3,Medium,Afternoon,0.9,Medium
+REM_0532,Take Multivitamins & Supplements,Health,14,5.0,3,Medium,Morning,0.98,Low
+REM_0533,Refill Prescription at Pharmacy,Health,7,1.0,5,High,Evening,0.59,High
+REM_0534,Security Audit Review,Work,0,6.0,4,Medium,Morning,0.55,High
+REM_0535,Cook Meal Prep for Tomorrow,Personal,8,4.0,4,Low,Afternoon,0.96,Medium
+REM_0536,Security Audit Review,Work,7,1.0,3,High,Evening,0.83,Medium
+REM_0537,Buy Weekly Groceries and Essentials,Personal,2,1.5,2,Low,Morning,0.54,Medium
+REM_0538,Prepare Presentation Slides,Academic,4,0.25,2,High,Evening,0.64,Medium
+REM_0539,Send Wedding Anniversary Wishes,Social,12,1.5,1,High,Night,0.57,Low
+REM_0540,Cook Meal Prep for Tomorrow,Personal,7,1.0,1,Low,Night,0.47,Low
+REM_0541,Participate in College Tech Fest,Social,4,0.25,3,Medium,Evening,0.6,Medium
+REM_0542,Pay Monthly Apartment Rent,Financial,14,2.0,2,High,Night,0.65,Low
+REM_0543,Physiotherapy Session,Health,3,4.0,5,Low,Morning,0.95,High
+REM_0544,Update Jira Sprint Backlog,Work,8,1.0,3,Medium,Night,0.64,Medium
+REM_0545,Pay Monthly Apartment Rent,Financial,6,0.5,3,Medium,Afternoon,0.94,Medium
+REM_0546,Morning Yoga and Meditation,Health,2,0.25,2,Medium,Evening,0.54,Medium
+REM_0547,File Income Tax Return,Financial,10,5.0,3,Medium,Morning,0.76,Medium
+REM_0548,Refill Prescription at Pharmacy,Health,4,0.5,5,Medium,Morning,0.64,High
+REM_0549,Physiotherapy Session,Health,10,3.0,5,Low,Afternoon,0.67,Medium
+REM_0550,Submit ML Lab Assignment,Academic,4,1.0,3,Medium,Night,0.55,Medium
+REM_0551,Read 30 Pages of Book,Personal,2,0.5,3,Low,Afternoon,0.49,Medium
+REM_0552,Track Daily Calorie Intake,Health,8,0.5,5,High,Evening,0.82,Medium
+REM_0553,Bug Triage and Code Review,Work,7,0.5,4,Medium,Night,0.91,Medium
+REM_0554,Review Monthly Bank Statement,Financial,3,0.25,2,Medium,Morning,0.86,Medium
+REM_0555,Solve Data Science Problem Set,Academic,0,1.0,4,High,Night,0.48,High
+REM_0556,Deploy Application to Production,Work,2,1.5,2,High,Evening,0.96,Medium
+REM_0557,Submit ML Lab Assignment,Academic,2,1.5,4,Medium,Night,0.9,High
+REM_0558,Cook Meal Prep for Tomorrow,Personal,2,2.0,3,High,Night,0.55,High
+REM_0559,Take Multivitamins & Supplements,Health,3,2.0,5,Low,Morning,0.97,High
+REM_0560,File Income Tax Return,Financial,5,0.25,4,Medium,Evening,0.74,High
+REM_0561,Transfer Mutual Fund SIP,Financial,7,2.0,3,Low,Night,0.76,Medium
+REM_0562,Group Project Discussion,Academic,2,2.0,4,High,Afternoon,0.5,High
+REM_0563,Take Multivitamins & Supplements,Health,4,1.0,4,Medium,Morning,0.94,High
+REM_0564,Submit Tuition Fees Payment,Financial,7,4.0,4,Medium,Evening,0.82,Medium
+REM_0565,Cook Meal Prep for Tomorrow,Personal,7,0.5,3,High,Morning,0.88,Medium
+REM_0566,Submit Weekly Progress Report,Work,2,3.0,5,Medium,Evening,0.82,High
+REM_0567,Take Multivitamins & Supplements,Health,7,4.0,4,Medium,Afternoon,0.71,Medium
+REM_0568,Database Migration Check,Work,8,1.0,5,High,Night,0.46,Medium
+REM_0569,Buy Weekly Groceries and Essentials,Personal,8,1.5,1,Low,Morning,0.96,Low
+REM_0570,Vendor Contract Follow-up,Work,7,1.0,5,Medium,Night,0.96,Medium
+REM_0571,Backup Laptop Hard Drive,Personal,0,1.5,2,Low,Afternoon,0.91,Medium
+REM_0572,Track Daily Calorie Intake,Health,5,0.25,3,Medium,Afternoon,0.91,Medium
+REM_0573,Audit Monthly Expense Budget,Financial,1,0.5,3,High,Evening,0.91,High
+REM_0574,Water Indoor Plants,Personal,2,1.0,2,High,Night,0.89,Medium
+REM_0575,Visit Grandparents at Weekend,Social,12,1.5,1,Medium,Night,0.48,Low
+REM_0576,Attend Guest Lecture on Deep Learning,Academic,2,1.5,3,Medium,Morning,0.63,High
+REM_0577,Audit Monthly Expense Budget,Financial,7,0.25,4,Medium,Morning,0.87,Medium
+REM_0578,Backup Laptop Hard Drive,Personal,6,0.25,1,Medium,Afternoon,0.65,Low
+REM_0579,Call Parents and Family,Social,12,1.5,2,High,Night,0.79,Low
+REM_0580,System Architecture Review,Work,7,0.5,2,High,Night,0.6,Low
+REM_0581,Security Audit Review,Work,3,0.25,5,Low,Morning,0.72,High
+REM_0582,Organize Digital Files & Photos,Personal,7,1.0,3,Low,Afternoon,0.63,Low
+REM_0583,Submit Seminar Abstract,Academic,3,0.5,3,Medium,Night,0.71,Medium
+REM_0584,Respond to High Priority Client Emails,Work,6,1.5,5,High,Afternoon,0.49,High
+REM_0585,Submit Tuition Fees Payment,Financial,0,0.5,5,High,Night,0.5,High
+REM_0586,Attend Department Farewell,Social,6,0.25,1,Low,Afternoon,0.96,Low
+REM_0587,Clean and Organize Work Desk,Personal,2,1.5,3,High,Evening,0.77,Medium
+REM_0588,Send Festival Greeting Messages,Social,5,4.0,3,High,Night,0.51,Medium
+REM_0589,Evening Gym Cardio Workout,Health,1,1.5,5,Medium,Evening,0.92,High
+REM_0590,Water Indoor Plants,Personal,7,1.0,3,High,Evening,0.46,Medium
+REM_0591,Backup Laptop Hard Drive,Personal,5,1.0,1,Low,Afternoon,0.96,Low
+REM_0592,Take Multivitamins & Supplements,Health,1,5.0,4,Medium,Afternoon,0.5,High
+REM_0593,Drink 2 Liters Water Goal,Health,0,0.25,4,High,Afternoon,0.85,High
+REM_0594,Attend Department Farewell,Social,2,1.5,2,Medium,Evening,0.45,Medium
+REM_0595,Transfer Mutual Fund SIP,Financial,5,1.5,4,High,Evening,0.58,High
+REM_0596,Doctor Consultation Appointment,Health,1,1.5,5,High,Night,0.46,High
+REM_0597,Transfer Mutual Fund SIP,Financial,2,0.5,3,Low,Evening,0.58,Medium
+REM_0598,Submit Research Paper Draft,Academic,7,1.5,4,High,Morning,0.49,Medium
+REM_0599,Physiotherapy Session,Health,14,2.0,5,High,Evening,0.89,Medium
+REM_0600,Send Festival Greeting Messages,Social,1,1.5,2,Low,Afternoon,0.84,Medium
+REM_0601,Book Train / Flight Tickets,Personal,4,1.0,1,High,Evening,0.94,Medium
+REM_0602,Submit Weekly Progress Report,Work,2,3.0,3,High,Afternoon,0.8,High
+REM_0603,Client Sprint Review Meeting,Work,8,1.5,4,High,Afternoon,0.58,Medium
+REM_0604,Send Wedding Anniversary Wishes,Social,4,4.0,2,Low,Morning,0.48,Medium
+REM_0605,Transfer Mutual Fund SIP,Financial,8,1.0,3,High,Night,0.46,Medium
+REM_0606,Prepare Presentation Slides,Academic,0,4.0,4,Low,Morning,0.51,High
+REM_0607,Car Servicing and Oil Change,Personal,7,1.5,2,Medium,Night,0.59,Low
+REM_0608,Recharge Mobile Prepaid Plan,Financial,0,1.5,3,Low,Evening,0.92,High
+REM_0609,Drink 2 Liters Water Goal,Health,8,0.25,4,High,Morning,0.6,Medium
+REM_0610,Prepare Presentation Slides,Academic,4,1.0,4,High,Afternoon,0.64,High
+REM_0611,Organize Digital Files & Photos,Personal,8,0.5,3,High,Morning,0.93,Medium
+REM_0612,Respond to High Priority Client Emails,Work,3,4.0,4,Low,Morning,0.91,High
+REM_0613,Renew Vehicle Insurance Policy,Financial,1,1.0,3,Low,Evening,0.72,Medium
+REM_0614,Submit ML Lab Assignment,Academic,6,3.0,5,Medium,Morning,0.85,High
+REM_0615,Drink 2 Liters Water Goal,Health,3,0.5,4,Medium,Night,0.81,High
+REM_0616,System Architecture Review,Work,2,0.5,2,Medium,Evening,0.45,Medium
+REM_0617,Submit Weekly Progress Report,Work,7,1.0,5,Medium,Afternoon,0.54,Medium
+REM_0618,Send Festival Greeting Messages,Social,1,1.0,1,High,Evening,0.77,Medium
+REM_0619,RSVP for Alumni Reunion,Social,2,1.0,1,Low,Evening,0.57,Medium
+REM_0620,Track Daily Calorie Intake,Health,3,1.0,4,High,Afternoon,0.82,High
+REM_0621,Database Migration Check,Work,7,1.0,3,High,Night,0.67,Medium
+REM_0622,Submit Tuition Fees Payment,Financial,4,1.5,2,Medium,Morning,0.51,Medium
+REM_0623,Recharge Mobile Prepaid Plan,Financial,2,1.5,2,Low,Afternoon,0.56,Medium
+REM_0624,Update Jira Sprint Backlog,Work,1,1.0,4,Medium,Afternoon,0.46,High
+REM_0625,Submit Research Paper Draft,Academic,8,1.0,2,Medium,Afternoon,0.75,Low
+REM_0626,Review Monthly Bank Statement,Financial,2,1.5,2,Medium,Evening,0.73,Medium
+REM_0627,Organize Digital Files & Photos,Personal,8,2.0,3,High,Morning,0.71,Medium
+REM_0628,Eye Specialist Appointment,Health,4,3.0,3,Medium,Afternoon,0.92,Medium
+REM_0629,Prepare Presentation Slides,Academic,4,1.0,2,Low,Night,0.88,Medium
+REM_0630,Evening Gym Cardio Workout,Health,0,1.0,5,Medium,Evening,0.74,High
+REM_0631,Attend Friend's Birthday Dinner,Social,14,1.5,1,High,Evening,0.49,Low
+REM_0632,Track Daily Calorie Intake,Health,3,1.0,5,Low,Afternoon,0.62,High
+REM_0633,Update Jira Sprint Backlog,Work,2,1.0,3,Low,Night,0.49,Medium
+REM_0634,Visit Grandparents at Weekend,Social,7,1.5,3,Medium,Night,0.45,Low
+REM_0635,Participate in College Tech Fest,Social,1,1.0,3,Medium,Afternoon,0.45,High
+REM_0636,Security Audit Review,Work,5,2.0,2,High,Morning,0.76,Medium
+REM_0637,Backup Laptop Hard Drive,Personal,8,2.0,3,High,Evening,0.72,Medium
+REM_0638,Group Project Discussion,Academic,6,0.5,4,Low,Morning,0.55,Medium
+REM_0639,Renew Passport Documentation,Personal,10,3.0,3,Low,Afternoon,0.85,Medium
+REM_0640,Prepare Product Pitch Deck,Work,10,1.5,4,High,Night,0.53,Medium
+REM_0641,Prepare Presentation Slides,Academic,4,0.5,4,Low,Night,0.56,Medium
+REM_0642,Revise Machine Learning Notes,Academic,1,3.0,4,Medium,Morning,0.72,High
+REM_0643,File Income Tax Return,Financial,1,1.5,2,High,Night,0.65,High
+REM_0644,Audit Monthly Expense Budget,Financial,8,1.5,3,Low,Night,0.59,Medium
+REM_0645,Mentor Junior AI Students,Social,12,0.5,2,High,Morning,0.59,Low
+REM_0646,Review Monthly Bank Statement,Financial,1,0.5,4,Low,Afternoon,0.8,High
+REM_0647,Laundry and Dry Cleaning Pickup,Personal,8,2.0,3,Low,Night,0.55,Medium
+REM_0648,Morning Yoga and Meditation,Health,3,0.25,4,Low,Morning,0.59,Medium
+REM_0649,Submit Seminar Abstract,Academic,0,0.5,5,Low,Evening,0.75,High
+REM_0650,File Income Tax Return,Financial,2,3.0,5,Low,Night,0.62,High
+REM_0651,Book Blood Test Diagnostics,Health,12,2.0,5,Medium,Night,0.9,Medium
+REM_0652,Credit Card Due Payment,Financial,0,6.0,2,High,Afternoon,0.62,High
+REM_0653,Community Volunteer Event,Social,7,3.0,3,Low,Afternoon,0.98,Medium
+REM_0654,Read 30 Pages of Book,Personal,0,2.0,2,High,Afternoon,0.75,High
+REM_0655,Send Wedding Anniversary Wishes,Social,2,0.5,3,Low,Morning,0.46,Medium
+REM_0656,Physiotherapy Session,Health,7,2.0,2,High,Night,0.78,Medium
+REM_0657,Read 30 Pages of Book,Personal,5,3.0,2,Low,Afternoon,0.76,Medium
+REM_0658,Transfer Mutual Fund SIP,Financial,7,1.5,4,Low,Evening,0.66,Medium
+REM_0659,Vendor Contract Follow-up,Work,2,4.0,4,Low,Morning,0.94,High
+REM_0660,Organize Weekend Get-together,Social,1,6.0,4,High,Morning,0.79,High
+REM_0661,Deploy Application to Production,Work,8,1.0,5,Low,Morning,0.48,Medium
+REM_0662,Buy Weekly Groceries and Essentials,Personal,6,4.0,2,Medium,Morning,0.54,Medium
+REM_0663,Vendor Contract Follow-up,Work,4,1.5,4,Low,Night,0.79,Medium
+REM_0664,Pay Monthly Apartment Rent,Financial,6,0.5,4,High,Afternoon,0.82,Medium
+REM_0665,Complete Mini Project Documentation,Academic,4,2.0,4,High,Evening,0.54,High
+REM_0666,Vendor Contract Follow-up,Work,8,5.0,5,High,Evening,0.73,High
+REM_0667,Home Appliance Maintenance,Personal,4,0.5,2,High,Evening,0.75,Medium
+REM_0668,Team Standup Sync,Work,5,1.0,4,Low,Afternoon,0.48,Medium
+REM_0669,Review Monthly Bank Statement,Financial,0,0.25,4,Medium,Morning,0.77,High
+REM_0670,Home Appliance Maintenance,Personal,10,0.5,3,High,Afternoon,0.84,Medium
+REM_0671,Connect with Mentors on LinkedIn,Social,2,6.0,3,Medium,Night,0.47,High
+REM_0672,Attend Guest Lecture on Deep Learning,Academic,14,2.0,4,High,Night,0.48,Medium
+REM_0673,Water Indoor Plants,Personal,2,5.0,1,High,Night,0.88,Medium
+REM_0674,File Income Tax Return,Financial,0,0.5,3,Medium,Night,0.7,High
+REM_0675,System Architecture Review,Work,2,0.5,2,Medium,Afternoon,0.53,Medium
+REM_0676,Team Standup Sync,Work,2,0.5,5,High,Afternoon,0.61,High
+REM_0677,Pay Electricity & Utility Bill,Financial,2,0.5,2,High,Night,0.64,Medium
+REM_0678,Submit Tuition Fees Payment,Financial,1,0.25,5,High,Afternoon,0.63,High
+REM_0679,Pay Monthly Apartment Rent,Financial,10,0.25,3,Medium,Afternoon,0.71,Low
+REM_0680,Eye Specialist Appointment,Health,8,1.0,2,Low,Night,0.72,Low
+REM_0681,Doctor Consultation Appointment,Health,1,0.5,4,High,Afternoon,0.71,High
+REM_0682,Submit Research Paper Draft,Academic,2,0.25,5,Medium,Morning,0.67,High
+REM_0683,Study for AI Midterms,Academic,4,1.0,4,High,Afternoon,0.8,High
+REM_0684,Pay Monthly Apartment Rent,Financial,2,2.0,4,Medium,Evening,0.97,High
+REM_0685,Study for AI Midterms,Academic,10,0.5,3,Low,Morning,0.71,Low
+REM_0686,Send Festival Greeting Messages,Social,4,1.0,3,Low,Afternoon,0.91,Medium
+REM_0687,Pay Monthly Apartment Rent,Financial,3,1.0,3,High,Evening,0.85,Medium
+REM_0688,Book Blood Test Diagnostics,Health,14,1.0,3,Medium,Evening,0.76,Low
+REM_0689,Drink 2 Liters Water Goal,Health,4,0.5,4,Medium,Night,0.74,High
+REM_0690,Credit Card Due Payment,Financial,1,0.5,4,High,Night,0.6,High
+REM_0691,Refill Prescription at Pharmacy,Health,1,2.0,3,Medium,Evening,0.6,Medium
+REM_0692,Pay Electricity & Utility Bill,Financial,3,1.0,5,High,Afternoon,0.5,High
+REM_0693,RSVP for Alumni Reunion,Social,5,2.0,3,Low,Evening,0.54,Medium
+REM_0694,Home Appliance Maintenance,Personal,1,0.5,3,High,Night,0.59,High
+REM_0695,Evening Gym Cardio Workout,Health,0,2.0,5,Low,Evening,0.78,High
+REM_0696,Respond to High Priority Client Emails,Work,4,0.25,3,High,Afternoon,0.71,Medium
+REM_0697,Submit Tuition Fees Payment,Financial,12,0.5,2,High,Evening,0.56,Low
+REM_0698,Physiotherapy Session,Health,4,2.0,4,High,Night,0.53,High
+REM_0699,File Income Tax Return,Financial,4,1.0,4,High,Evening,0.98,High
+REM_0700,Bug Triage and Code Review,Work,8,0.25,3,High,Night,0.56,Medium
+REM_0701,System Architecture Review,Work,3,1.5,4,High,Morning,0.93,High
+REM_0702,Buy Weekly Groceries and Essentials,Personal,0,1.0,1,Low,Morning,0.68,Medium
+REM_0703,Solve Data Science Problem Set,Academic,8,0.25,3,Low,Afternoon,0.69,Low
+REM_0704,Submit Final Semester Thesis,Academic,5,0.5,3,Low,Morning,0.65,Medium
+REM_0705,System Architecture Review,Work,8,2.0,3,Medium,Evening,0.52,Medium
+REM_0706,Group Project Discussion,Academic,6,4.0,4,High,Night,0.66,High
+REM_0707,Send Festival Greeting Messages,Social,0,2.0,1,Low,Morning,0.73,Medium
+REM_0708,Renew Passport Documentation,Personal,3,5.0,1,Medium,Morning,0.8,Medium
+REM_0709,Revise Machine Learning Notes,Academic,12,1.5,3,High,Evening,0.81,Low
+REM_0710,Book Train / Flight Tickets,Personal,12,1.5,3,Low,Night,0.6,Low
+REM_0711,Submit Weekly Progress Report,Work,2,0.25,5,Low,Afternoon,0.83,High
+REM_0712,Deploy Application to Production,Work,14,0.5,3,High,Evening,0.49,Low
+REM_0713,Drink 2 Liters Water Goal,Health,4,0.5,3,Medium,Morning,0.89,Medium
+REM_0714,Book Blood Test Diagnostics,Health,0,0.5,2,Medium,Afternoon,0.77,Medium
+REM_0715,Send Wedding Anniversary Wishes,Social,1,1.0,4,Medium,Morning,0.72,High
+REM_0716,Connect with Mentors on LinkedIn,Social,6,2.0,3,Low,Morning,0.76,Medium
+REM_0717,Pay Wi-Fi Broadband Bill,Financial,12,2.0,5,Medium,Night,0.48,Medium
+REM_0718,Prepare Presentation Slides,Academic,3,3.0,5,Low,Afternoon,0.93,High
+REM_0719,Submit Seminar Abstract,Academic,2,0.5,4,Medium,Evening,0.55,High
+REM_0720,Laundry and Dry Cleaning Pickup,Personal,3,0.25,3,High,Morning,0.84,Medium
+REM_0721,Deploy Application to Production,Work,4,1.0,3,High,Night,0.61,Medium
+REM_0722,Take Prescribed Morning Medication,Health,1,1.0,2,Low,Evening,0.93,Medium
+REM_0723,Home Appliance Maintenance,Personal,3,1.5,3,High,Morning,0.94,High
+REM_0724,Prepare Product Pitch Deck,Work,6,1.0,5,Low,Afternoon,0.62,High
+REM_0725,Car Servicing and Oil Change,Personal,0,2.0,3,High,Night,0.51,High
+REM_0726,Submit Research Paper Draft,Academic,1,0.5,5,Low,Afternoon,0.49,High
+REM_0727,Read 30 Pages of Book,Personal,5,0.25,3,High,Evening,0.8,Medium
+REM_0728,Pay Health Insurance Premium,Financial,1,0.5,4,Low,Morning,0.95,High
+REM_0729,Organize Digital Files & Photos,Personal,8,0.5,4,Medium,Morning,0.96,Medium
+REM_0730,Solve Data Science Problem Set,Academic,0,1.5,2,Low,Morning,0.69,Medium
+REM_0731,Track Daily Calorie Intake,Health,2,0.5,4,High,Night,0.76,High
+REM_0732,Take Prescribed Morning Medication,Health,8,1.0,4,High,Evening,0.64,Medium
+REM_0733,Renew Vehicle Insurance Policy,Financial,8,0.5,3,Low,Evening,0.49,Low
+REM_0734,Read 30 Pages of Book,Personal,10,1.0,1,Medium,Afternoon,0.88,Low
+REM_0735,Visit Grandparents at Weekend,Social,8,1.0,2,High,Night,0.61,Low
+REM_0736,Group Project Discussion,Academic,4,1.0,2,Medium,Afternoon,0.67,Medium
+REM_0737,Attend Friend's Birthday Dinner,Social,1,5.0,3,Low,Evening,0.75,High
+REM_0738,Respond to High Priority Client Emails,Work,3,1.5,2,High,Afternoon,0.95,Medium
+REM_0739,Organize Weekend Get-together,Social,6,1.0,1,Medium,Evening,0.74,Low
+REM_0740,Prepare for Viva Exam,Academic,8,1.0,4,Low,Evening,0.59,Medium
+REM_0741,Transfer Mutual Fund SIP,Financial,1,1.0,3,Medium,Morning,0.81,Medium
+REM_0742,Submit Weekly Progress Report,Work,3,0.5,3,Low,Night,0.89,Medium
+REM_0743,Submit Tuition Fees Payment,Financial,0,0.5,4,High,Night,0.92,High
+REM_0744,Submit ML Lab Assignment,Academic,4,5.0,4,Low,Evening,0.57,High
+REM_0745,Laundry and Dry Cleaning Pickup,Personal,10,4.0,4,High,Evening,0.79,Medium
+REM_0746,Pay Electricity & Utility Bill,Financial,7,1.5,4,Medium,Night,0.68,Medium
+REM_0747,Credit Card Due Payment,Financial,7,0.25,5,High,Afternoon,0.89,High
+REM_0748,Renew Passport Documentation,Personal,3,4.0,2,Low,Night,0.58,Medium
+REM_0749,Bug Triage and Code Review,Work,10,1.0,4,Medium,Evening,0.61,Low
+REM_0750,Physiotherapy Session,Health,0,0.25,3,Low,Morning,0.97,High
+REM_0751,Respond to High Priority Client Emails,Work,14,1.5,3,Medium,Night,0.63,Low
+REM_0752,Physiotherapy Session,Health,12,2.0,4,Low,Evening,0.59,Low
+REM_0753,Refill Prescription at Pharmacy,Health,14,1.5,2,High,Night,0.8,Low
+REM_0754,Home Appliance Maintenance,Personal,12,1.5,1,Low,Night,0.57,Low
+REM_0755,Complete Mini Project Documentation,Academic,2,1.0,4,Medium,Morning,0.53,High
+REM_0756,Transfer Mutual Fund SIP,Financial,7,0.25,5,High,Night,0.66,Medium
+REM_0757,Physiotherapy Session,Health,1,1.5,2,Medium,Night,0.77,Medium
+REM_0758,Visit Grandparents at Weekend,Social,0,5.0,3,Low,Evening,0.52,High
+REM_0759,Track Daily Calorie Intake,Health,2,4.0,5,High,Afternoon,0.67,High
+REM_0760,Transfer Mutual Fund SIP,Financial,0,0.25,4,Low,Night,0.87,High
+REM_0761,Drink 2 Liters Water Goal,Health,2,1.0,2,High,Night,0.66,Medium
+REM_0762,Clean and Organize Work Desk,Personal,2,0.5,3,Medium,Night,0.93,Medium
+REM_0763,Book Blood Test Diagnostics,Health,3,0.25,4,Medium,Morning,0.68,High
+REM_0764,Clean and Organize Work Desk,Personal,2,2.0,1,High,Afternoon,0.94,Medium
+REM_0765,Participate in College Tech Fest,Social,0,0.5,2,Low,Night,0.91,Medium
+REM_0766,Send Wedding Anniversary Wishes,Social,2,1.0,2,Medium,Evening,0.54,Medium
+REM_0767,Attend Friend's Birthday Dinner,Social,5,2.0,3,Medium,Night,0.53,Medium
+REM_0768,Security Audit Review,Work,3,1.5,4,Medium,Afternoon,0.48,High
+REM_0769,Eye Specialist Appointment,Health,0,1.5,3,Low,Night,0.55,Medium
+REM_0770,Credit Card Due Payment,Financial,10,0.5,5,Medium,Night,0.57,Medium
+REM_0771,Read 30 Pages of Book,Personal,3,1.5,1,High,Night,0.89,Medium
+REM_0772,Buy Weekly Groceries and Essentials,Personal,3,1.5,1,Medium,Morning,0.64,Medium
+REM_0773,Study for AI Midterms,Academic,6,0.25,3,High,Evening,0.98,Medium
+REM_0774,Security Audit Review,Work,10,1.0,3,High,Morning,0.78,Medium
+REM_0775,Cook Meal Prep for Tomorrow,Personal,3,0.5,2,High,Night,0.75,Medium
+REM_0776,Book Blood Test Diagnostics,Health,12,2.0,4,Low,Morning,0.74,Low
+REM_0777,Submit Research Paper Draft,Academic,7,2.0,2,Low,Afternoon,0.47,Low
+REM_0778,Transfer Mutual Fund SIP,Financial,7,3.0,3,Medium,Night,0.5,Medium
+REM_0779,Visit Grandparents at Weekend,Social,1,1.5,4,High,Afternoon,0.9,High
+REM_0780,Take Prescribed Morning Medication,Health,5,1.5,4,Medium,Morning,0.75,Medium
+REM_0781,Book Blood Test Diagnostics,Health,3,2.0,3,Low,Morning,0.57,Medium
+REM_0782,RSVP for Alumni Reunion,Social,6,0.5,3,Medium,Evening,0.48,Medium
+REM_0783,Physiotherapy Session,Health,1,2.0,4,Low,Night,0.47,High
+REM_0784,Physiotherapy Session,Health,4,0.5,5,Low,Night,0.7,High
+REM_0785,Attend Department Farewell,Social,0,0.5,1,Medium,Evening,0.46,Medium
+REM_0786,Submit Research Paper Draft,Academic,5,0.5,3,Low,Morning,0.8,Medium
+REM_0787,Attend Guest Lecture on Deep Learning,Academic,14,3.0,2,High,Morning,0.76,Low
+REM_0788,RSVP for Alumni Reunion,Social,0,1.5,1,High,Afternoon,0.63,High
+REM_0789,Car Servicing and Oil Change,Personal,12,0.25,2,High,Afternoon,0.83,Low
+REM_0790,Take Multivitamins & Supplements,Health,6,2.0,5,Medium,Night,0.81,Medium
+REM_0791,Respond to High Priority Client Emails,Work,6,0.5,5,High,Afternoon,0.45,High
+REM_0792,Security Audit Review,Work,6,1.0,4,High,Night,0.46,Medium
+REM_0793,Pay Electricity & Utility Bill,Financial,7,1.5,3,High,Afternoon,0.74,Medium
+REM_0794,Audit Monthly Expense Budget,Financial,0,4.0,5,Medium,Night,0.79,High
+REM_0795,Submit Final Semester Thesis,Academic,1,1.5,4,Low,Afternoon,0.86,High
+REM_0796,Morning Yoga and Meditation,Health,2,1.0,2,Low,Morning,0.9,Medium
+REM_0797,Car Servicing and Oil Change,Personal,14,1.0,2,Medium,Evening,0.5,Low
+REM_0798,Update Jira Sprint Backlog,Work,5,0.5,3,Low,Evening,0.5,Medium
+REM_0799,Send Festival Greeting Messages,Social,2,0.5,1,High,Evening,0.97,Medium
+REM_0800,Read 30 Pages of Book,Personal,10,1.0,4,High,Night,0.88,Low
+REM_0801,Laundry and Dry Cleaning Pickup,Personal,2,1.0,1,Medium,Evening,0.81,Medium
+REM_0802,Audit Monthly Expense Budget,Financial,1,0.25,4,Low,Evening,0.76,High
+REM_0803,Home Appliance Maintenance,Personal,6,2.0,3,Low,Afternoon,0.91,Medium
+REM_0804,Doctor Consultation Appointment,Health,5,0.25,3,Low,Evening,0.6,Medium
+REM_0805,Complete Mini Project Documentation,Academic,4,2.0,4,Medium,Afternoon,0.55,High
+REM_0806,Read 30 Pages of Book,Personal,5,0.25,2,Medium,Afternoon,0.48,Low
+REM_0807,Read 30 Pages of Book,Personal,1,1.0,2,Medium,Afternoon,0.57,Medium
+REM_0808,Recharge Mobile Prepaid Plan,Financial,0,1.5,4,High,Afternoon,0.58,High
+REM_0809,Car Servicing and Oil Change,Personal,2,3.0,2,Medium,Evening,0.88,Medium
+REM_0810,Bug Triage and Code Review,Work,3,1.0,4,Medium,Night,0.55,High
+REM_0811,Buy Weekly Groceries and Essentials,Personal,7,1.0,2,Medium,Morning,0.93,Low
+REM_0812,File Income Tax Return,Financial,6,2.0,3,Low,Night,0.69,Medium
+REM_0813,Renew Passport Documentation,Personal,3,0.5,4,High,Night,0.51,High
+REM_0814,Recharge Mobile Prepaid Plan,Financial,3,0.5,2,Medium,Night,0.72,Medium
+REM_0815,Send Festival Greeting Messages,Social,1,6.0,3,Medium,Afternoon,0.69,High
+REM_0816,Group Project Discussion,Academic,1,1.0,5,Low,Afternoon,0.66,High
+REM_0817,Take Prescribed Morning Medication,Health,6,1.5,4,Medium,Afternoon,0.48,Medium
+REM_0818,Book Train / Flight Tickets,Personal,1,1.5,2,Low,Night,0.76,Medium
+REM_0819,Organize Digital Files & Photos,Personal,3,0.25,1,Medium,Morning,0.66,Medium
+REM_0820,Laundry and Dry Cleaning Pickup,Personal,1,1.0,1,Medium,Evening,0.77,Medium
+REM_0821,Buy Weekly Groceries and Essentials,Personal,10,0.5,2,High,Night,0.88,Low
+REM_0822,Clean and Organize Work Desk,Personal,5,1.0,4,Medium,Morning,0.61,Medium
+REM_0823,Connect with Mentors on LinkedIn,Social,1,1.0,1,Low,Evening,0.77,Medium
+REM_0824,Submit Seminar Abstract,Academic,8,1.0,2,Medium,Evening,0.78,Medium
+REM_0825,Submit Seminar Abstract,Academic,8,0.5,5,Low,Afternoon,0.95,Medium
+REM_0826,Vendor Contract Follow-up,Work,5,1.5,5,High,Evening,0.71,High
+REM_0827,Visit Grandparents at Weekend,Social,8,0.25,4,High,Night,0.97,Medium
+REM_0828,Database Migration Check,Work,3,1.0,4,Low,Afternoon,0.48,Medium
+REM_0829,Client Sprint Review Meeting,Work,5,1.0,5,High,Evening,0.56,High
+REM_0830,Book Train / Flight Tickets,Personal,8,1.0,3,High,Afternoon,0.64,Medium
+REM_0831,Morning Yoga and Meditation,Health,8,2.0,4,Medium,Evening,0.78,Medium
+REM_0832,Book Train / Flight Tickets,Personal,3,1.0,4,High,Morning,0.77,High
+REM_0833,Respond to High Priority Client Emails,Work,2,1.0,4,Low,Evening,0.55,High
+REM_0834,RSVP for Alumni Reunion,Social,7,0.5,2,High,Afternoon,0.8,Low
+REM_0835,Bug Triage and Code Review,Work,0,0.5,4,High,Evening,0.55,High
+REM_0836,Security Audit Review,Work,0,1.0,3,Medium,Night,0.71,High
+REM_0837,Database Migration Check,Work,3,0.25,5,High,Evening,0.72,High
+REM_0838,Organize Weekend Get-together,Social,10,5.0,2,Medium,Night,0.48,Medium
+REM_0839,Prepare Presentation Slides,Academic,0,0.5,2,Low,Night,0.74,Medium
+REM_0840,Organize Digital Files & Photos,Personal,12,0.5,3,Medium,Evening,0.49,Low
+REM_0841,Renew Vehicle Insurance Policy,Financial,1,0.25,2,Medium,Morning,0.72,Medium
+REM_0842,Attend Friend's Birthday Dinner,Social,14,4.0,3,High,Night,0.53,Low
+REM_0843,Connect with Mentors on LinkedIn,Social,3,0.25,2,High,Evening,0.45,Medium
+REM_0844,Revise Machine Learning Notes,Academic,3,1.0,4,Medium,Afternoon,0.46,High
+REM_0845,Pay Monthly Apartment Rent,Financial,2,0.25,3,Medium,Evening,0.96,High
+REM_0846,Drink 2 Liters Water Goal,Health,2,0.5,3,Medium,Afternoon,0.5,Medium
+REM_0847,Backup Laptop Hard Drive,Personal,1,1.5,3,Medium,Morning,0.74,High
+REM_0848,Prepare for Viva Exam,Academic,0,0.5,3,High,Night,0.86,High
+REM_0849,Prepare for Viva Exam,Academic,14,3.0,3,Low,Night,0.89,Low
+REM_0850,Pay Electricity & Utility Bill,Financial,3,0.5,5,Medium,Afternoon,0.87,High
+REM_0851,RSVP for Alumni Reunion,Social,2,1.0,3,High,Evening,0.76,High
+REM_0852,Team Standup Sync,Work,10,1.5,2,Low,Evening,0.52,Low
+REM_0853,Doctor Consultation Appointment,Health,3,1.0,4,Medium,Afternoon,0.73,Medium
+REM_0854,Solve Data Science Problem Set,Academic,1,4.0,3,High,Evening,0.92,High
+REM_0855,Attend Department Farewell,Social,12,0.5,4,Low,Night,0.64,Low
+REM_0856,Attend Friend's Birthday Dinner,Social,3,1.0,2,High,Morning,0.76,Medium
+REM_0857,Study for AI Midterms,Academic,1,1.0,4,Medium,Morning,0.75,High
+REM_0858,Database Migration Check,Work,0,2.0,3,Low,Night,0.75,Medium
+REM_0859,Submit ML Lab Assignment,Academic,2,1.0,4,High,Evening,0.87,High
+REM_0860,Solve Data Science Problem Set,Academic,4,0.5,2,High,Afternoon,0.67,Medium
+REM_0861,Credit Card Due Payment,Financial,5,0.5,4,Low,Night,0.45,Medium
+REM_0862,Submit Final Semester Thesis,Academic,7,1.0,2,Low,Morning,0.95,Low
+REM_0863,Annual Dental Checkup,Health,1,0.25,4,Medium,Afternoon,0.78,High
+REM_0864,File Income Tax Return,Financial,4,0.5,5,High,Afternoon,0.46,High
+REM_0865,Revise Machine Learning Notes,Academic,10,3.0,4,High,Morning,0.77,Medium
+REM_0866,Cook Meal Prep for Tomorrow,Personal,7,1.0,4,Low,Night,0.55,Medium
+REM_0867,Morning Yoga and Meditation,Health,2,0.5,3,Low,Afternoon,0.61,High
+REM_0868,Audit Monthly Expense Budget,Financial,3,0.25,4,High,Night,0.5,High
+REM_0869,Submit Weekly Progress Report,Work,1,0.5,4,Low,Afternoon,0.6,High
+REM_0870,Group Project Discussion,Academic,0,1.5,4,High,Night,0.87,High
+REM_0871,Book Blood Test Diagnostics,Health,12,0.5,2,Medium,Afternoon,0.92,Low
+REM_0872,Team Standup Sync,Work,6,4.0,4,High,Morning,0.98,Medium
+REM_0873,System Architecture Review,Work,7,3.0,3,High,Evening,0.48,Medium
+REM_0874,Call Parents and Family,Social,2,0.25,1,High,Evening,0.91,Medium
+REM_0875,System Architecture Review,Work,4,0.5,4,High,Afternoon,0.85,High
+REM_0876,Organize Weekend Get-together,Social,3,5.0,1,Medium,Morning,0.79,Medium
+REM_0877,Update Jira Sprint Backlog,Work,12,2.0,3,Medium,Morning,0.86,Low
+REM_0878,Update Jira Sprint Backlog,Work,6,1.0,5,High,Morning,0.56,High
+REM_0879,Buy Weekly Groceries and Essentials,Personal,4,1.0,1,Medium,Evening,0.79,Low
+REM_0880,Respond to High Priority Client Emails,Work,3,0.5,3,High,Night,0.87,High
+REM_0881,Take Multivitamins & Supplements,Health,12,2.0,3,High,Afternoon,0.93,Low
+REM_0882,Credit Card Due Payment,Financial,14,0.5,3,Low,Morning,0.48,Low
+REM_0883,Submit Research Paper Draft,Academic,4,0.5,2,Low,Morning,0.62,Medium
+REM_0884,Solve Data Science Problem Set,Academic,2,3.0,5,High,Evening,0.86,High
+REM_0885,Attend Department Farewell,Social,1,4.0,3,High,Night,0.81,High
+REM_0886,Pay Health Insurance Premium,Financial,6,0.25,4,Medium,Morning,0.62,Medium
+REM_0887,Participate in College Tech Fest,Social,8,0.25,3,High,Afternoon,0.95,Medium
+REM_0888,Doctor Consultation Appointment,Health,7,4.0,5,Medium,Morning,0.62,Medium
+REM_0889,Clean and Organize Work Desk,Personal,10,1.5,1,Low,Evening,0.84,Low
+REM_0890,Audit Monthly Expense Budget,Financial,10,0.25,3,High,Morning,0.83,Medium
+REM_0891,Morning Yoga and Meditation,Health,4,1.0,5,Medium,Afternoon,0.54,High
+REM_0892,Study for AI Midterms,Academic,1,1.0,4,Low,Night,0.77,High
+REM_0893,Submit Seminar Abstract,Academic,4,2.0,5,High,Morning,0.83,High
+REM_0894,Eye Specialist Appointment,Health,3,1.5,5,High,Afternoon,0.51,High
+REM_0895,Submit ML Lab Assignment,Academic,3,0.25,5,High,Afternoon,0.96,High
+REM_0896,Call Parents and Family,Social,2,4.0,1,Low,Night,0.61,Medium
+REM_0897,Take Multivitamins & Supplements,Health,7,0.25,3,High,Evening,0.46,Medium
+REM_0898,Prepare Product Pitch Deck,Work,3,0.5,3,Low,Evening,0.73,Medium
+REM_0899,Attend Friend's Birthday Dinner,Social,4,1.0,3,Low,Evening,0.72,Medium
+REM_0900,Review Monthly Bank Statement,Financial,6,1.0,4,High,Morning,0.67,Medium
+REM_0901,Morning Yoga and Meditation,Health,8,2.0,3,High,Morning,0.79,Medium
+REM_0902,Renew Vehicle Insurance Policy,Financial,2,1.0,5,High,Evening,0.62,High
+REM_0903,Submit Seminar Abstract,Academic,5,1.0,5,High,Afternoon,0.94,High
+REM_0904,Evening Gym Cardio Workout,Health,1,0.5,4,Medium,Morning,0.45,High
+REM_0905,Cook Meal Prep for Tomorrow,Personal,12,1.5,3,High,Morning,0.54,Low
+REM_0906,Vendor Contract Follow-up,Work,3,1.0,2,High,Morning,0.63,Medium
+REM_0907,Submit ML Lab Assignment,Academic,3,1.5,4,Low,Morning,0.51,High
+REM_0908,Transfer Mutual Fund SIP,Financial,3,1.5,4,Medium,Afternoon,0.72,High
+REM_0909,Client Sprint Review Meeting,Work,10,0.25,5,High,Night,0.86,Medium
+REM_0910,Prepare Product Pitch Deck,Work,4,2.0,5,Low,Night,0.58,High
+REM_0911,Community Volunteer Event,Social,4,3.0,4,Medium,Morning,0.5,Medium
+REM_0912,Water Indoor Plants,Personal,0,0.5,2,Low,Morning,0.88,Medium
+REM_0913,Deploy Application to Production,Work,2,0.25,5,High,Morning,0.61,High
+REM_0914,Credit Card Due Payment,Financial,0,1.0,3,Medium,Evening,0.6,High
+REM_0915,Annual Dental Checkup,Health,3,3.0,3,Low,Night,0.93,Medium
+REM_0916,Attend Guest Lecture on Deep Learning,Academic,1,0.25,5,Low,Evening,0.61,High
+REM_0917,Book Train / Flight Tickets,Personal,2,0.5,1,High,Afternoon,0.87,Medium
+REM_0918,Transfer Mutual Fund SIP,Financial,1,3.0,2,High,Night,0.55,Medium
+REM_0919,Vendor Contract Follow-up,Work,8,0.25,4,High,Afternoon,0.96,Medium
+REM_0920,Client Sprint Review Meeting,Work,1,0.25,5,Medium,Morning,0.72,High
+REM_0921,System Architecture Review,Work,7,3.0,5,Medium,Morning,0.88,High
+REM_0922,Take Prescribed Morning Medication,Health,2,1.0,3,High,Night,0.66,High
+REM_0923,Attend Department Farewell,Social,5,1.5,1,Medium,Morning,0.54,Low
+REM_0924,System Architecture Review,Work,8,1.5,5,Low,Night,0.53,Medium
+REM_0925,Pay Electricity & Utility Bill,Financial,5,1.0,2,Low,Evening,0.67,Low
+REM_0926,Submit ML Lab Assignment,Academic,1,4.0,3,Low,Night,0.52,High
+REM_0927,Community Volunteer Event,Social,7,6.0,1,Medium,Morning,0.65,Low
+REM_0928,Laundry and Dry Cleaning Pickup,Personal,6,0.25,1,High,Afternoon,0.95,Medium
+REM_0929,Organize Weekend Get-together,Social,12,1.5,3,Low,Morning,0.88,Low
+REM_0930,Recharge Mobile Prepaid Plan,Financial,2,1.0,4,Low,Afternoon,0.53,High
+REM_0931,Drink 2 Liters Water Goal,Health,5,1.0,5,Medium,Night,0.52,High
+REM_0932,Attend Department Farewell,Social,2,1.5,2,Medium,Evening,0.82,Medium
+REM_0933,Review Monthly Bank Statement,Financial,3,0.5,5,Low,Morning,0.7,High
+REM_0934,Bug Triage and Code Review,Work,1,0.5,5,High,Morning,0.81,High
+REM_0935,Submit Weekly Progress Report,Work,0,0.5,4,Low,Night,0.48,High
+REM_0936,Transfer Mutual Fund SIP,Financial,3,0.25,2,Medium,Morning,0.61,Medium
+REM_0937,Water Indoor Plants,Personal,0,0.25,4,Low,Night,0.71,High
+REM_0938,Physiotherapy Session,Health,12,5.0,3,Medium,Morning,0.56,Low
+REM_0939,Complete Mini Project Documentation,Academic,7,3.0,4,High,Evening,0.74,Medium
+REM_0940,Attend Department Farewell,Social,1,0.5,4,High,Morning,0.65,High
+REM_0941,Prepare Product Pitch Deck,Work,7,5.0,3,Low,Morning,0.84,Medium
+REM_0942,Send Wedding Anniversary Wishes,Social,0,1.0,1,Medium,Night,0.57,Medium
+REM_0943,Buy Weekly Groceries and Essentials,Personal,7,1.0,4,High,Evening,0.63,Medium
+REM_0944,Evening Gym Cardio Workout,Health,4,3.0,3,Low,Night,0.75,Medium
+REM_0945,Submit Tuition Fees Payment,Financial,7,0.5,5,High,Afternoon,0.68,High
+REM_0946,Submit Seminar Abstract,Academic,8,1.5,5,Low,Afternoon,0.84,Medium
+REM_0947,Submit ML Lab Assignment,Academic,8,1.0,5,Low,Afternoon,0.48,Medium
+REM_0948,Deploy Application to Production,Work,4,1.0,5,Medium,Evening,0.79,High
+REM_0949,Connect with Mentors on LinkedIn,Social,1,1.0,3,High,Morning,0.56,High
+REM_0950,Home Appliance Maintenance,Personal,4,5.0,1,Medium,Morning,0.83,Medium
+REM_0951,Prepare for Viva Exam,Academic,14,1.0,4,Low,Night,0.93,Low
+REM_0952,Submit Weekly Progress Report,Work,2,0.25,4,Medium,Morning,0.56,High
+REM_0953,Submit Seminar Abstract,Academic,0,5.0,2,Low,Afternoon,0.58,High
+REM_0954,Read 30 Pages of Book,Personal,5,1.5,1,High,Night,0.77,Medium
+REM_0955,Pay Electricity & Utility Bill,Financial,7,5.0,5,Medium,Night,0.75,High
+REM_0956,Prepare Product Pitch Deck,Work,0,0.25,5,Low,Afternoon,0.62,High
+REM_0957,Drink 2 Liters Water Goal,Health,8,1.0,4,Medium,Afternoon,0.7,Medium
+REM_0958,Group Project Discussion,Academic,10,2.0,2,High,Afternoon,0.9,Low
+REM_0959,Mentor Junior AI Students,Social,1,0.5,2,Medium,Night,0.82,High
+REM_0960,Backup Laptop Hard Drive,Personal,1,0.25,1,Low,Morning,0.62,Medium
+REM_0961,Book Blood Test Diagnostics,Health,5,1.5,5,Low,Night,0.68,High
+REM_0962,Security Audit Review,Work,2,1.5,2,High,Afternoon,0.51,Medium
+REM_0963,Participate in College Tech Fest,Social,2,1.0,2,Low,Night,0.77,Medium
+REM_0964,Community Volunteer Event,Social,5,1.5,4,Medium,Night,0.94,Medium
+REM_0965,Track Daily Calorie Intake,Health,7,0.5,4,High,Evening,0.8,Medium
+REM_0966,Review Monthly Bank Statement,Financial,4,0.5,4,Low,Morning,0.73,High
+REM_0967,Track Daily Calorie Intake,Health,1,0.5,5,Low,Morning,0.5,High
+REM_0968,Take Prescribed Morning Medication,Health,3,1.0,3,Medium,Evening,0.63,Medium
+REM_0969,Clean and Organize Work Desk,Personal,12,1.0,4,Low,Morning,0.62,Low
+REM_0970,Security Audit Review,Work,12,1.0,2,Low,Evening,0.84,Low
+REM_0971,Organize Digital Files & Photos,Personal,4,5.0,1,Low,Afternoon,0.72,Low
+REM_0972,Read 30 Pages of Book,Personal,4,0.25,2,Medium,Afternoon,0.51,Medium
+REM_0973,Deploy Application to Production,Work,8,0.5,3,High,Evening,0.72,Medium
+REM_0974,Attend Department Farewell,Social,0,2.0,1,Medium,Morning,0.51,Medium
+REM_0975,Attend Department Farewell,Social,0,2.0,2,Medium,Afternoon,0.59,Medium
+REM_0976,Clean and Organize Work Desk,Personal,4,1.0,2,Medium,Evening,0.63,Medium
+REM_0977,Update Jira Sprint Backlog,Work,2,1.0,2,Low,Morning,0.5,Medium
+REM_0978,Study for AI Midterms,Academic,2,1.0,4,High,Afternoon,0.71,High
+REM_0979,Revise Machine Learning Notes,Academic,7,0.5,3,Medium,Morning,0.94,Medium
+REM_0980,Track Daily Calorie Intake,Health,12,1.0,4,Low,Afternoon,0.58,Low
+REM_0981,Morning Yoga and Meditation,Health,3,1.0,5,Low,Evening,0.72,High
+REM_0982,Submit ML Lab Assignment,Academic,5,1.5,2,Low,Afternoon,0.94,Medium
+REM_0983,Revise Machine Learning Notes,Academic,5,1.0,2,Medium,Morning,0.86,Medium
+REM_0984,Morning Yoga and Meditation,Health,6,1.5,5,High,Night,0.52,High
+REM_0985,Laundry and Dry Cleaning Pickup,Personal,2,3.0,1,Medium,Evening,0.85,Medium
+REM_0986,Evening Gym Cardio Workout,Health,1,1.0,5,Low,Night,0.57,High
+REM_0987,Send Festival Greeting Messages,Social,5,0.5,1,High,Evening,0.7,Low
+REM_0988,Vendor Contract Follow-up,Work,1,1.0,5,High,Evening,0.75,High
+REM_0989,Security Audit Review,Work,0,1.0,2,High,Afternoon,0.88,High
+REM_0990,Review Monthly Bank Statement,Financial,3,0.25,5,High,Evening,0.95,High
+REM_0991,Bug Triage and Code Review,Work,7,1.5,5,High,Morning,0.64,High
+REM_0992,Visit Grandparents at Weekend,Social,2,2.0,3,Medium,Morning,0.94,High
+REM_0993,Database Migration Check,Work,1,1.5,5,Medium,Afternoon,0.48,High
+REM_0994,Visit Grandparents at Weekend,Social,2,1.5,4,Low,Night,0.83,High
+REM_0995,Prepare Product Pitch Deck,Work,14,2.0,3,High,Morning,0.68,Low
+REM_0996,Prepare Product Pitch Deck,Work,12,0.5,3,Medium,Afternoon,0.85,Low
+REM_0997,Attend Friend's Birthday Dinner,Social,3,1.0,2,High,Evening,0.84,Medium
+REM_0998,Pay Electricity & Utility Bill,Financial,1,1.0,3,Medium,Afternoon,0.48,Medium
+REM_0999,Vendor Contract Follow-up,Work,5,0.5,5,Low,Evening,0.77,Medium
+REM_1000,Doctor Consultation Appointment,Health,7,1.0,4,High,Morning,0.45,High

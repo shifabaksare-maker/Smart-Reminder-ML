@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Reminder - Machine Learning Based Reminder System</title>
+  <meta name="description" content="College Mini Project on ML-Powered Smart Reminder and Notification Urgency Prediction System by Shifa Baksare">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span class="badge academic-badge">AI &amp; Data Science Engineering Mini Project</span>
+      <span class="author-tag">Candidate: <strong>Shifa Baksare</strong> (3rd Year B.E.)</span>
+    </div>
+  </div>
+
+  <!-- Header Banner -->
+  <header class="hero-header">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> Machine Learning Based Intelligent Reminder System
+      </div>
+      <h1 class="hero-title">SMART REMINDER</h1>
+      <p class="hero-subtitle">
+        An intelligent notification prioritization engine that predicts task urgency, schedules adaptive alerts, and prevents reminder fatigue using <strong>Random Forest Classification</strong>.
+      </p>
+      <div class="quick-stats">
+        <div class="stat-pill"><span class="stat-num">88.0%</span> Test Accuracy</div>
+        <div class="stat-pill"><span class="stat-num">1,000</span> Dataset Samples</div>
+        <div class="stat-pill"><span class="stat-num">7</span> Engine Features</div>
+        <div class="stat-pill"><span class="stat-num">3</span> Urgency Tiers</div>
+      </div>
+      
+      <!-- Academic Deliverables & Interactive Tools -->
+      <div class="deliverables-bar">
+        <a href="/download/report" class="deliverable-btn report-btn" title="Download Academic Project Report">
+          📄 Download Project Report (PDF)
+        </a>
+        <a href="/download/presentation" class="deliverable-btn ppt-btn" title="Download Presentation Slides">
+          📊 Download Presentation (PPTX)
+        </a>
+        <button type="button" class="deliverable-btn console-btn" onclick="openApiModal()" title="Open Interactive REST API Console">
+          🚀 REST API Console
+        </button>
+        <button type="button" class="deliverable-btn audio-demo-btn" onclick="openAudioModal()" title="Test Adaptive Alert Chimes">
+          🔊 Audio Alert Demo
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container main-content">
+
+    <!-- Preset Quick-Fill Buttons -->
+    <div class="preset-section">
+      <span class="preset-label">Quick Test Presets (Viva Demos):</span>
+      <div class="preset-buttons">
+        <button type="button" class="preset-btn" onclick="fillPreset('Academic', 'Final ML Lab Viva & Report', 1, 4.0, 5, 'High', 'Morning', 0.85)">
+          🎓 Academic Viva (High)
+        </button>
+        <button type="button" class="preset-btn" onclick="fillPreset('Financial', 'Pay Electricity & Wi-Fi Bill', 4, 0.5, 3, 'Medium', 'Afternoon', 0.90)">
+          💳 Bill Payment (Medium)
+        </button>
+        <button type="button" class="preset-btn" onclick="fillPreset('Personal', 'Weekly Grocery & Fruit Shopping', 10, 1.5, 2, 'Low', 'Evening', 0.75)">
+          🛒 Grocery Run (Low)
+        </button>
+        <button type="button" class="preset-btn" onclick="fillPreset('Health', 'Take Morning Blood Pressure Medication', 0, 0.25, 5, 'High', 'Morning', 0.95)">
+          💊 Medication Alert (High)
+        </button>
+      </div>
+    </div>
+
+    <div class="app-grid">
+      <!-- Input Form Card -->
+      <section class="card form-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <h2 class="card-title">Task Parameters</h2>
+            <p class="card-desc">Enter reminder details to predict AI-driven urgency and alarm strategy</p>
+          </div>
+          <span class="model-badge">RF Classifier</span>
+        </div>
+
+        <form id="reminder-form" action="/" method="POST" class="smart-form" onsubmit="handleAjaxSubmit(event)">
+          <!-- Task Name -->
+          <div class="form-group">
+            <label for="task_name" class="form-label">
+              <span>Task / Reminder Title</span>
+              <span class="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="task_name" 
+              name="task_name" 
+              class="form-control" 
+              placeholder="e.g. Submit Machine Learning Mini Project" 
+              value="{{ form_data.task_name if form_data else 'Final Year ML Mini Project Submission' }}" 
+              required
+            >
+          </div>
+
+          <!-- Category and Time Slot -->
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="category" class="form-label">Task Category</label>
+              <select id="category" name="category" class="form-select">
+                <option value="Academic" {% if form_data.category == 'Academic' %}selected{% endif %}>🎓 Academic</option>
+                <option value="Work" {% if form_data.category == 'Work' %}selected{% endif %}>💼 Work / Corporate</option>
+                <option value="Health" {% if form_data.category == 'Health' %}selected{% endif %}>💊 Health &amp; Fitness</option>
+                <option value="Financial" {% if form_data.category == 'Financial' %}selected{% endif %}>💳 Financial &amp; Bills</option>
+                <option value="Personal" {% if form_data.category == 'Personal' %}selected{% endif %}>🏡 Personal &amp; Home</option>
+                <option value="Social" {% if form_data.category == 'Social' %}selected{% endif %}>🤝 Social &amp; Events</option>
+              </select>
+            </div>
+
+            <div class="form-group col-half">
+              <label for="time_slot" class="form-label">Preferred Time Slot</label>
+              <select id="time_slot" name="time_slot" class="form-select">
+                <option value="Morning" {% if form_data.time_slot == 'Morning' %}selected{% endif %}>🌅 Morning (07:00 - 12:00)</option>
+                <option value="Afternoon" {% if form_data.time_slot == 'Afternoon' %}selected{% endif %}>☀️ Afternoon (12:00 - 17:00)</option>
+                <option value="Evening" {% if form_data.time_slot == 'Evening' %}selected{% endif %}>🌇 Evening (17:00 - 21:00)</option>
+                <option value="Night" {% if form_data.time_slot == 'Night' %}selected{% endif %}>🌙 Night (21:00 - 24:00)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Days Until Due & Estimated Hours -->
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="days_until_due" class="form-label">
+                <span>Days Until Deadline</span>
+                <span id="days_val" class="slider-val">{{ form_data.days_until_due if form_data else 1 }} day(s)</span>
+              </label>
+              <input 
+                type="range" 
+                id="days_until_due" 
+                name="days_until_due" 
+                min="0" 
+                max="14" 
+                step="1"
+                class="form-range" 
+                value="{{ form_data.days_until_due if form_data else 1 }}"
+                oninput="document.getElementById('days_val').innerText = this.value + ' day(s)'"
+              >
+              <div class="range-labels">
+                <span>0 (Today)</span>
+                <span>7 Days</span>
+                <span>14 Days</span>
+              </div>
+            </div>
+
+            <div class="form-group col-half">
+              <label for="estimated_hours" class="form-label">
+                <span>Estimated Duration</span>
+                <span id="hours_val" class="slider-val">{{ form_data.estimated_hours if form_data else 3.5 }} hrs</span>
+              </label>
+              <input 
+                type="range" 
+                id="estimated_hours" 
+                name="estimated_hours" 
+                min="0.25" 
+                max="8.0" 
+                step="0.25"
+                class="form-range" 
+                value="{{ form_data.estimated_hours if form_data else 3.5 }}"
+                oninput="document.getElementById('hours_val').innerText = this.value + ' hrs'"
+              >
+              <div class="range-labels">
+                <span>15 mins</span>
+                <span>4.0 hrs</span>
+                <span>8.0 hrs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Importance and Complexity -->
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="importance_rating" class="form-label">
+                <span>Importance Rating (1 to 5)</span>
+                <span id="imp_val" class="slider-val">{{ form_data.importance_rating if form_data else 5 }} / 5</span>
+              </label>
+              <input 
+                type="range" 
+                id="importance_rating" 
+                name="importance_rating" 
+                min="1" 
+                max="5" 
+                step="1"
+                class="form-range range-importance" 
+                value="{{ form_data.importance_rating if form_data else 5 }}"
+                oninput="document.getElementById('imp_val').innerText = this.value + ' / 5'"
+              >
+              <div class="range-labels">
+                <span>1 (Low)</span>
+                <span>3 (Medium)</span>
+                <span>5 (Critical)</span>
+              </div>
+            </div>
+
+            <div class="form-group col-half">
+              <label for="task_complexity" class="form-label">Task Complexity</label>
+              <select id="task_complexity" name="task_complexity" class="form-select">
+                <option value="Low" {% if form_data.task_complexity == 'Low' %}selected{% endif %}>🟢 Low (Simple Action)</option>
+                <option value="Medium" {% if form_data.task_complexity == 'Medium' %}selected{% endif %}>🟡 Medium (Multi-step)</option>
+                <option value="High" {% if form_data.task_complexity == 'High' %}selected{% endif %}>🔴 High (Cognitive / Heavy)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Hidden default for past completion rate -->
+          <input type="hidden" id="past_completion_rate" name="past_completion_rate" value="{{ form_data.past_completion_rate if form_data else 0.85 }}">
+
+          <!-- Submit Button -->
+          <button type="submit" id="predict-btn" class="btn-primary">
+            <span class="btn-icon">⚡</span>
+            <span>Predict Reminder</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- Output / Result Card -->
+      <section class="card result-card" id="result-card-container">
+        <div class="card-header">
+          <div class="card-title-group">
+            <h2 class="card-title">Prediction &amp; Dispatch Strategy</h2>
+            <p class="card-desc">Machine Learning inference result and alert schedule</p>
+          </div>
+          <span class="live-pill"><span class="live-dot"></span> Live Engine</span>
+        </div>
+
+        {% if result and not result.error %}
+          <div class="prediction-container" id="prediction-box">
+            <!-- Urgency Banner -->
+            <div class="urgency-banner urgency-{{ result.predicted_urgency | lower }}" id="urgency-banner">
+              <div class="urgency-icon-box" id="urgency-icon">
+                {% if result.predicted_urgency == 'High' %}🚨
+                {% elif result.predicted_urgency == 'Medium' %}⚠️
+                {% else %}✅{% endif %}
+              </div>
+              <div class="urgency-details">
+                <span class="urgency-sub">PREDICTED PRIORITY TIER</span>
+                <h3 class="urgency-title" id="urgency-title-text">{{ result.predicted_urgency }} Urgency</h3>
+              </div>
+              <div class="confidence-badge">
+                <span class="conf-num" id="confidence-val">{{ result.confidence }}%</span>
+                <span class="conf-text">Confidence</span>
+              </div>
+            </div>
+
+            <!-- Action Bar (Save + Audio) -->
+            <div class="result-action-bar">
+              <button type="button" class="action-btn action-btn-save" onclick="saveCurrentPrediction()">
+                <span>📌 Add to My Reminders</span>
+              </button>
+              <button type="button" class="action-btn action-btn-audio" onclick="playPredictedAlarm()">
+                <span>🔊 Test Alarm Tone</span>
+              </button>
+              <button type="button" class="action-btn action-btn-stop" id="stop-alarm-btn" onclick="stopAlarm()">
+                <span>⏹️ Stop Sound</span>
+              </button>
+            </div>
+
+            <!-- Audio Visualizer Indicator -->
+            <div class="audio-visualizer" id="audio-viz">
+              <div class="sound-bars">
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+              </div>
+              <span id="audio-viz-text">Playing Alarm Tone...</span>
+            </div>
+
+            <!-- Probabilities Bars -->
+            <div class="prob-section">
+              <h4 class="section-heading">Multi-Class Probability Distribution</h4>
+              <div class="prob-bars">
+                <div class="prob-item">
+                  <div class="prob-labels">
+                    <span>High Urgency</span>
+                    <span class="prob-pct" id="prob-high-val">{{ result.probabilities['High'] }}%</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill bar-high" id="bar-high" style="width: {{ result.probabilities['High'] }}%;"></div>
+                  </div>
+                </div>
+
+                <div class="prob-item">
+                  <div class="prob-labels">
+                    <span>Medium Urgency</span>
+                    <span class="prob-pct" id="prob-med-val">{{ result.probabilities['Medium'] }}%</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill bar-medium" id="bar-med" style="width: {{ result.probabilities['Medium'] }}%;"></div>
+                  </div>
+                </div>
+
+                <div class="prob-item">
+                  <div class="prob-labels">
+                    <span>Low Urgency</span>
+                    <span class="prob-pct" id="prob-low-val">{{ result.probabilities['Low'] }}%</span>
+                  </div>
+                  <div class="bar-track">
+                    <div class="bar-fill bar-low" id="bar-low" style="width: {{ result.probabilities['Low'] }}%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Explainable AI (XAI) Factors -->
+            <div class="xai-section">
+              <div class="xai-title">
+                <span>Explainable AI (XAI) Urgency Factors</span>
+                <span>Random Forest Weights</span>
+              </div>
+              <div class="xai-grid">
+                <div class="xai-card">
+                  <div class="xai-header">
+                    <span>⏳ Proximity Impact</span>
+                    <span class="xai-score" id="xai-prox-val">High ({{ result.days_until_due }}d)</span>
+                  </div>
+                  <div class="xai-track">
+                    <div class="xai-fill" id="xai-prox-fill" style="width: {{ [100 - (result.days_until_due * 7), 10] | max }}%;"></div>
+                  </div>
+                </div>
+                <div class="xai-card">
+                  <div class="xai-header">
+                    <span>⭐ Importance Rating</span>
+                    <span class="xai-score" id="xai-imp-val">{{ result.importance_rating }}/5 ({{ (result.importance_rating / 5 * 100) | int }}%)</span>
+                  </div>
+                  <div class="xai-track">
+                    <div class="xai-fill" id="xai-imp-fill" style="width: {{ (result.importance_rating / 5 * 100) }}%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Smart Action Schedule -->
+            <div class="dispatch-details">
+              <h4 class="section-heading">Recommended Reminder Behavior</h4>
+              
+              <div class="info-tile">
+                <div class="tile-icon">🔔</div>
+                <div class="tile-body">
+                  <span class="tile-label">Alert Mode</span>
+                  <span class="tile-value" id="alert-mode-val">{{ result.alert_mode }}</span>
+                </div>
+              </div>
+
+              <div class="info-tile">
+                <div class="tile-icon">⏱️</div>
+                <div class="tile-body">
+                  <span class="tile-label">Notification Cadence</span>
+                  <span class="tile-value" id="cadence-val">{{ result.frequency }}</span>
+                </div>
+              </div>
+
+              <div class="info-tile">
+                <div class="tile-icon">💡</div>
+                <div class="tile-body">
+                  <span class="tile-label">AI Decision Logic (Viva Defense)</span>
+                  <p class="tile-explanation" id="explanation-val">{{ result.explanation }}</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Summary Chips -->
+            <div class="task-summary-chips" id="summary-chips">
+              <span class="summary-chip" id="chip-cat">📁 {{ result.category }}</span>
+              <span class="summary-chip" id="chip-days">⏳ {{ result.days_until_due }} Day(s) Left</span>
+              <span class="summary-chip" id="chip-hours">⏱️ {{ result.estimated_hours }} Hours Work</span>
+              <span class="summary-chip" id="chip-imp">⭐ Priority {{ result.importance_rating }}/5</span>
+              <span class="summary-chip" id="chip-slot">🕒 {{ result.time_slot }} Slot</span>
+            </div>
+          </div>
+        {% elif result and result.error %}
+          <div class="error-box">
+            <span class="error-icon">⚠️</span>
+            <p>{{ result.error }}</p>
+          </div>
+        {% else %}
+          <!-- Empty State -->
+          <div class="empty-state">
+            <div class="empty-icon">🤖</div>
+            <h3>Ready for Prediction</h3>
+            <p>Fill out the task parameters on the left or select a quick viva preset, then click <strong>"Predict Reminder"</strong> to trigger the Random Forest classifier.</p>
+          </div>
+        {% endif %}
+      </section>
+    </div>
+
+    <!-- Active Reminders Dashboard Card -->
+    <section class="card reminders-board-card">
+      <div class="board-header-row">
+        <div>
+          <h2 class="card-title">📋 Active Reminders Dashboard</h2>
+          <p class="card-desc">Scheduled alerts managed adaptively by predicted urgency level</p>
+        </div>
+        <div class="board-controls">
+          <input type="text" id="board-search-input" class="board-search" placeholder="🔍 Search reminders..." oninput="renderReminders()">
+          <button type="button" class="rem-action-btn" onclick="exportRemindersCSV()">📥 Export CSV</button>
+          <button type="button" class="rem-action-btn" onclick="exportRemindersJSON()">📄 Export JSON</button>
+          <button type="button" class="rem-action-btn rem-action-del" onclick="clearCompletedReminders()">🗑️ Clear Completed</button>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button type="button" class="filter-btn active" onclick="setBoardFilter('All', this)">All (<span id="count-all">0</span>)</button>
+        <button type="button" class="filter-btn" onclick="setBoardFilter('High', this)">🚨 High (<span id="count-high">0</span>)</button>
+        <button type="button" class="filter-btn" onclick="setBoardFilter('Medium', this)">⚠️ Medium (<span id="count-med">0</span>)</button>
+        <button type="button" class="filter-btn" onclick="setBoardFilter('Low', this)">✅ Low (<span id="count-low">0</span>)</button>
+        <button type="button" class="filter-btn" onclick="setBoardFilter('Completed', this)">✔️ Completed (<span id="count-comp">0</span>)</button>
+      </div>
+
+      <!-- Reminders List -->
+      <div class="reminders-list" id="reminders-container">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Technical Architecture & Viva Cheat-Sheet Card -->
+    <section class="card tech-card">
+      <div class="card-header">
+        <h2 class="card-title">Project Overview &amp; Model Specifications</h2>
+        <span class="badge">Viva Quick Reference</span>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-box">
+          <h4>🤖 Model Architecture</h4>
+          <p><strong>Random Forest Classifier</strong> with 100 estimators, max depth 8, and Gini impurity criterion. Evaluated against Logistic Regression &amp; Decision Trees.</p>
+        </div>
+        <div class="tech-box">
+          <h4>📊 Dataset &amp; Split</h4>
+          <p><strong>1,000 synthetic records</strong> across 6 domains (Academic, Work, Health, Finance, Personal, Social). 80% Train (800) / 20% Test (200) Stratified Split.</p>
+        </div>
+        <div class="tech-box">
+          <h4>⚙️ Preprocessing Pipeline</h4>
+          <p>Numerical features normalized via <strong>StandardScaler</strong>; categorical attributes encoded via <strong>OneHotEncoder</strong> with unseen category tolerance.</p>
+        </div>
+        <div class="tech-box">
+          <h4>🎯 Engineering Value</h4>
+          <p>Solves <strong>Reminder Fatigue</strong> by replacing dumb static timers with adaptive urgency scoring, dynamic sound alarms, and context-aware frequency.</p>
+        </div>
+      </div>
+
+      <!-- Evaluation & Diagnostic Visualizations -->
+      <div class="charts-section">
+        <h3 class="charts-title">Model Diagnostics &amp; Experimental Charts</h3>
+        <div class="charts-grid">
+          <div class="chart-card">
+            <h5>Algorithm Accuracy Comparison</h5>
+            <img src="/screenshots/model_comparison.png" alt="Model Comparison Chart" class="chart-img">
+          </div>
+          <div class="chart-card">
+            <h5>Random Forest Confusion Matrix</h5>
+            <img src="/screenshots/confusion_matrix.png" alt="Confusion Matrix Chart" class="chart-img">
+          </div>
+          <div class="chart-card">
+            <h5>Top 10 Feature Importances</h5>
+            <img src="/screenshots/feature_importance.png" alt="Feature Importance Chart" class="chart-img">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive REST API Modal -->
+  <div class="modal-backdrop" id="api-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">🚀 Interactive REST API Console</h3>
+        <button type="button" class="modal-close-btn" onclick="closeApiModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:0.85rem; color:#64748b;">
+          Test the live programmatic endpoint <code>POST /api/predict</code> with real JSON payloads.
+        </p>
+        
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <span style="font-size:0.8rem; font-weight:700; color:#334155;">Load Payload:</span>
+          <button type="button" class="rem-action-btn" onclick="loadApiPayload('viva')">🎓 Academic Viva</button>
+          <button type="button" class="rem-action-btn" onclick="loadApiPayload('med')">💊 Medication</button>
+          <button type="button" class="rem-action-btn" onclick="loadApiPayload('bill')">💳 Bill Payment</button>
+          <button type="button" class="rem-action-btn" onclick="loadApiPayload('grocery')">🛒 Grocery</button>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Request Body (JSON)</label>
+          <textarea id="api-request-json" class="form-control" rows="8" style="font-family:Consolas,monospace; font-size:0.82rem;"></textarea>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <button type="button" class="btn-primary" style="margin-top:0; padding:10px 20px;" onclick="sendApiRequest()">
+            <span>⚡ Send Request</span>
+          </button>
+          <span id="api-latency-pill" style="font-size:0.8rem; font-weight:700; color:#0f766e;"></span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Response JSON</label>
+          <pre class="code-box" id="api-response-json">// Click 'Send Request' to execute API call...</pre>
+        </div>
+
+        <div style="display:flex; gap:10px;">
+          <button type="button" class="rem-action-btn" onclick="copyApiCurl()">📋 Copy cURL</button>
+          <button type="button" class="rem-action-btn" onclick="copyApiResponse()">📋 Copy Response</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Alert Demo Modal -->
+  <div class="modal-backdrop" id="audio-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">🔊 Adaptive Audio Alert Demonstration</h3>
+        <button type="button" class="modal-close-btn" onclick="closeAudioModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:0.88rem; color:#475569;">
+          Traditional reminder apps use identical chimes for all alerts. Smart Reminder differentiates acoustic profiles using the Web Audio API based on the predicted priority tier:
+        </p>
+
+        <div class="audio-demo-grid">
+          <div class="audio-demo-card high">
+            <span style="font-size:2rem;">🚨</span>
+            <strong style="color:#b91c1c;">High Urgency</strong>
+            <p style="font-size:0.78rem; color:#7f1d1d;">Pulsing siren (880Hz / 660Hz) with rapid cadence.</p>
+            <button type="button" class="action-btn action-btn-audio" onclick="playSynthesizedSound('High')">▶️ Play Siren</button>
+          </div>
+
+          <div class="audio-demo-card med">
+            <span style="font-size:2rem;">⚠️</span>
+            <strong style="color:#b45309;">Medium Urgency</strong>
+            <p style="font-size:0.78rem; color:#92400e;">Harmonic bell chime (587Hz -> 880Hz).</p>
+            <button type="button" class="action-btn action-btn-audio" onclick="playSynthesizedSound('Medium')">▶️ Play Chime</button>
+          </div>
+
+          <div class="audio-demo-card low">
+            <span style="font-size:2rem;">✅</span>
+            <strong style="color:#047857;">Low Urgency</strong>
+            <p style="font-size:0.78rem; color:#065f46;">Soothing ambient pop (440Hz decaying bell).</p>
+            <button type="button" class="action-btn action-btn-audio" onclick="playSynthesizedSound('Low')">▶️ Play Pop</button>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:8px;">
+          <button type="button" class="rem-action-btn rem-action-del" onclick="stopAlarm()">⏹️ Stop All Audio</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="toast-msg" id="toast-box">
+    <span id="toast-text">Notification</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <p><strong>SMART REMINDER</strong> – ML Based Reminder System</p>
+      <p>Developed by: <strong>Shifa Baksare</strong> | 3rd Year AI &amp; Data Science Engineering</p>
+      <p class="copyright">&copy; Academic Submission Ready • Flask + Scikit-Learn</p>
+    </div>
+  </footer>
+
+  <!-- Embedded Client Logic (Web Audio, Active Reminders, AJAX, and API Console) -->
+  <script>
+    // --- State & Global Context ---
+    let currentPrediction = {{ result | tojson | safe if result and not result.error else 'null' }};
+    let activeAudioContext = null;
+    let activeOscillators = [];
+    let boardFilter = 'All';
+
+    // --- Web Audio API Alert Synthesizer ---
+    function getAudioContext() {
+      if (!activeAudioContext) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) {
+          activeAudioContext = new AudioContextClass();
+        }
+      }
+      if (activeAudioContext && activeAudioContext.state === 'suspended') {
+        activeAudioContext.resume();
+      }
+      return activeAudioContext;
+    }
+
+    function stopAlarm() {
+      if (activeOscillators.length > 0) {
+        activeOscillators.forEach(osc => {
+          try { osc.stop(); osc.disconnect(); } catch (e) {}
+        });
+        activeOscillators = [];
+      }
+      const viz = document.getElementById('audio-viz');
+      if (viz) viz.classList.remove('active');
+      const stopBtn = document.getElementById('stop-alarm-btn');
+      if (stopBtn) stopBtn.classList.remove('active');
+    }
+
+    function playSynthesizedSound(urgency) {
+      stopAlarm();
+      const ctx = getAudioContext();
+      if (!ctx) {
+        showToast("Web Audio is not supported in this browser environment.");
+        return;
+      }
+
+      const viz = document.getElementById('audio-viz');
+      const vizText = document.getElementById('audio-viz-text');
+      const stopBtn = document.getElementById('stop-alarm-btn');
+
+      if (viz) viz.classList.add('active');
+      if (stopBtn) stopBtn.classList.add('active');
+
+      const now = ctx.currentTime;
+
+      if (urgency === 'High') {
+        // High Urgency: Dual-frequency escalating siren alarm (880Hz / 660Hz alternating)
+        if (vizText) vizText.innerText = "🚨 Alert Siren: Dual-Frequency Escalate (880Hz / 660Hz)";
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sawtooth';
+        
+        // Rapid alternating siren pitch
+        const cycle = 0.25;
+        for (let i = 0; i < 8; i++) {
+          osc.frequency.setValueAtTime(880, now + i * cycle);
+          osc.frequency.setValueAtTime(660, now + (i + 0.5) * cycle);
+        }
+
+        gain.gain.setValueAtTime(0.2, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 2.0);
+
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 2.0);
+        activeOscillators.push(osc);
+
+        setTimeout(() => stopAlarm(), 2100);
+
+      } else if (urgency === 'Medium') {
+        // Medium Urgency: Harmonic two-tone doorbell chime (587.3Hz D5 -> 880Hz A5)
+        if (vizText) vizText.innerText = "⚠️ Medium Chime: Harmonic Two-Tone (587Hz -> 880Hz)";
+        const osc1 = ctx.createOscillator();
+        const gain1 = ctx.createGain();
+        osc1.type = 'sine';
+        osc1.frequency.setValueAtTime(587.33, now);
+        gain1.gain.setValueAtTime(0.25, now);
+        gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+        osc1.connect(gain1);
+        gain1.connect(ctx.destination);
+        osc1.start(now);
+        osc1.stop(now + 0.6);
+
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(880, now + 0.25);
+        gain2.gain.setValueAtTime(0.25, now + 0.25);
+        gain2.gain.exponentialRampToValueAtTime(0.001, now + 1.2);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+        osc2.start(now + 0.25);
+        osc2.stop(now + 1.2);
+
+        activeOscillators.push(osc1, osc2);
+        setTimeout(() => stopAlarm(), 1300);
+
+      } else {
+        // Low Urgency: Gentle soft acoustic marimba pop (440Hz single decaying ping)
+        if (vizText) vizText.innerText = "✅ Low Priority: Gentle Acoustic Bell (440Hz)";
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(440, now);
+        gain.gain.setValueAtTime(0.18, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.7);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 0.7);
+        activeOscillators.push(osc);
+
+        setTimeout(() => stopAlarm(), 800);
+      }
+    }
+
+    function playPredictedAlarm() {
+      if (currentPrediction && currentPrediction.predicted_urgency) {
+        playSynthesizedSound(currentPrediction.predicted_urgency);
+      } else {
+        playSynthesizedSound('High');
+      }
+    }
+
+    // --- Active Reminders LocalStorage Manager ---
+    const STORAGE_KEY = 'smart_reminders_tasks_v1';
+
+    function getSavedReminders() {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (!stored) {
+        // Pre-seed default reminders for examiner demo
+        const defaultReminders = [
+          {
+            id: 'task_def_1',
+            task_name: 'ML Mini Project Final Viva Defense',
+            category: 'Academic',
+            days_until_due: 1,
+            estimated_hours: 3.5,
+            importance_rating: 5,
+            predicted_urgency: 'High',
+            alert_mode: 'Loud Sound + Persistent Sticky Banner',
+            frequency: 'Every 3 Hours + Urgent Morning Alarm',
+            completed: false,
+            created_at: new Date().toLocaleDateString()
+          },
+          {
+            id: 'task_def_2',
+            task_name: 'Pay Electricity & Broadband Invoice',
+            category: 'Financial',
+            days_until_due: 4,
+            estimated_hours: 0.5,
+            importance_rating: 3,
+            predicted_urgency: 'Medium',
+            alert_mode: 'Standard Tone + Push Notification',
+            frequency: 'Twice Daily (Morning & Evening Slot)',
+            completed: false,
+            created_at: new Date().toLocaleDateString()
+          },
+          {
+            id: 'task_def_3',
+            task_name: 'Weekly Grocery & Household Restock',
+            category: 'Personal',
+            days_until_due: 10,
+            estimated_hours: 1.5,
+            importance_rating: 2,
+            predicted_urgency: 'Low',
+            alert_mode: 'Gentle Chime / Silent Notification',
+            frequency: 'Single Reminder 24 Hours Before Due',
+            completed: false,
+            created_at: new Date().toLocaleDateString()
+          }
+        ];
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultReminders));
+        return defaultReminders;
+      }
+      try {
+        return JSON.parse(stored);
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveRemindersList(list) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      renderReminders();
+    }
+
+    function saveCurrentPrediction() {
+      if (!currentPrediction) {
+        showToast("Please run a prediction first before saving.");
+        return;
+      }
+      const list = getSavedReminders();
+      const newTask = {
+        id: 'task_' + Date.now(),
+        task_name: currentPrediction.task_name,
+        category: currentPrediction.category,
+        days_until_due: currentPrediction.days_until_due,
+        estimated_hours: currentPrediction.estimated_hours,
+        importance_rating: currentPrediction.importance_rating,
+        predicted_urgency: currentPrediction.predicted_urgency,
+        alert_mode: currentPrediction.alert_mode,
+        frequency: currentPrediction.frequency,
+        completed: false,
+        created_at: new Date().toLocaleDateString()
+      };
+      list.unshift(newTask);
+      saveRemindersList(list);
+      showToast(`Saved '${newTask.task_name}' to reminders!`);
+    }
+
+    function toggleReminderDone(id) {
+      const list = getSavedReminders();
+      const item = list.find(r => r.id === id);
+      if (item) {
+        item.completed = !item.completed;
+        saveRemindersList(list);
+      }
+    }
+
+    function deleteReminder(id) {
+      let list = getSavedReminders();
+      list = list.filter(r => r.id !== id);
+      saveRemindersList(list);
+      showToast("Reminder deleted.");
+    }
+
+    function clearCompletedReminders() {
+      let list = getSavedReminders();
+      list = list.filter(r => !r.completed);
+      saveRemindersList(list);
+      showToast("Completed reminders cleared.");
+    }
+
+    function setBoardFilter(filter, el) {
+      boardFilter = filter;
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      if (el) el.classList.add('active');
+      renderReminders();
+    }
+
+    function renderReminders() {
+      const container = document.getElementById('reminders-container');
+      if (!container) return;
+
+      const list = getSavedReminders();
+      const searchQuery = (document.getElementById('board-search-input')?.value || '').toLowerCase().trim();
+
+      // Counts
+      const totalCount = list.length;
+      const highCount = list.filter(r => r.predicted_urgency === 'High' && !r.completed).length;
+      const medCount = list.filter(r => r.predicted_urgency === 'Medium' && !r.completed).length;
+      const lowCount = list.filter(r => r.predicted_urgency === 'Low' && !r.completed).length;
+      const compCount = list.filter(r => r.completed).length;
+
+      document.getElementById('count-all').innerText = totalCount;
+      document.getElementById('count-high').innerText = highCount;
+      document.getElementById('count-med').innerText = medCount;
+      document.getElementById('count-low').innerText = lowCount;
+      document.getElementById('count-comp').innerText = compCount;
+
+      let filtered = list;
+      if (boardFilter === 'High') filtered = list.filter(r => r.predicted_urgency === 'High' && !r.completed);
+      else if (boardFilter === 'Medium') filtered = list.filter(r => r.predicted_urgency === 'Medium' && !r.completed);
+      else if (boardFilter === 'Low') filtered = list.filter(r => r.predicted_urgency === 'Low' && !r.completed);
+      else if (boardFilter === 'Completed') filtered = list.filter(r => r.completed);
+
+      if (searchQuery) {
+        filtered = filtered.filter(r => r.task_name.toLowerCase().includes(searchQuery) || r.category.toLowerCase().includes(searchQuery));
+      }
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="board-empty">
+            <p>No reminders found in this category.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => {
+        const daysText = item.days_until_due === 0 ? '🚨 Due Today' : (item.days_until_due === 1 ? '⏰ Due Tomorrow' : `📅 In ${item.days_until_due} Days`);
+        return `
+          <div class="reminder-row ${item.completed ? 'completed' : ''}">
+            <input type="checkbox" class="rem-check" ${item.completed ? 'checked' : ''} onchange="toggleReminderDone('${item.id}')" title="Mark Done">
+            
+            <span class="rem-priority-pill rem-priority-${item.predicted_urgency.toLowerCase()}">
+              ${item.predicted_urgency === 'High' ? '🚨' : (item.predicted_urgency === 'Medium' ? '⚠️' : '✅')} ${item.predicted_urgency}
+            </span>
+
+            <div class="rem-info">
+              <div class="rem-title">${escapeHtml(item.task_name)}</div>
+              <div class="rem-meta">
+                <span>📁 ${item.category}</span>
+                <span>${daysText}</span>
+                <span>⏱️ ${item.estimated_hours}h work</span>
+                <span>🔔 ${escapeHtml(item.alert_mode)}</span>
+              </div>
+            </div>
+
+            <div class="rem-actions">
+              <button type="button" class="rem-action-btn" onclick="playSynthesizedSound('${item.predicted_urgency}')" title="Play Sound">
+                🔊 Sound
+              </button>
+              <button type="button" class="rem-action-btn rem-action-del" onclick="deleteReminder('${item.id}')" title="Delete">
+                ✕
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function exportRemindersCSV() {
+      const list = getSavedReminders();
+      if (list.length === 0) {
+        showToast("No reminders to export.");
+        return;
+      }
+      let csv = "ID,Task_Name,Category,Days_Until_Due,Estimated_Hours,Importance_Rating,Urgency,Alert_Mode,Completed\n";
+      list.forEach(r => {
+        csv += `"${r.id}","${r.task_name.replace(/"/g, '""')}","${r.category}",${r.days_until_due},${r.estimated_hours},${r.importance_rating},"${r.predicted_urgency}","${r.alert_mode.replace(/"/g, '""')}",${r.completed}\n`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Smart_Reminders_Export_${Date.now()}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("Reminders exported to CSV.");
+    }
+
+    function exportRemindersJSON() {
+      const list = getSavedReminders();
+      if (list.length === 0) {
+        showToast("No reminders to export.");
+        return;
+      }
+      const blob = new Blob([JSON.stringify(list, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Smart_Reminders_Export_${Date.now()}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("Reminders exported to JSON.");
+    }
+
+    // --- Seamless AJAX Form Prediction ---
+    async function handleAjaxSubmit(event) {
+      event.preventDefault();
+      const btn = document.getElementById('predict-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span>⏳ Computing Prediction...</span>';
+      btn.disabled = true;
+
+      const payload = {
+        task_name: document.getElementById('task_name').value.trim() || 'Task',
+        category: document.getElementById('category').value,
+        days_until_due: parseInt(document.getElementById('days_until_due').value, 10),
+        estimated_hours: parseFloat(document.getElementById('estimated_hours').value),
+        importance_rating: parseInt(document.getElementById('importance_rating').value, 10),
+        task_complexity: document.getElementById('task_complexity').value,
+        time_slot: document.getElementById('time_slot').value,
+        past_completion_rate: parseFloat(document.getElementById('past_completion_rate').value || 0.85)
+      };
+
+      try {
+        const response = await fetch('/api/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const resData = await response.json();
+        if (resData.status === 'success') {
+          currentPrediction = resData.data;
+          updatePredictionUI(currentPrediction);
+          showToast(`Prediction: ${currentPrediction.predicted_urgency} Urgency (${currentPrediction.confidence}%)`);
+        } else {
+          showToast(`Error: ${resData.message}`);
+        }
+      } catch (err) {
+        console.error(err);
+        // Fallback to regular POST submit if fetch fails
+        document.getElementById('reminder-form').submit();
+      } finally {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    }
+
+    function updatePredictionUI(data) {
+      const banner = document.getElementById('urgency-banner');
+      const icon = document.getElementById('urgency-icon');
+      const title = document.getElementById('urgency-title-text');
+      const conf = document.getElementById('confidence-val');
+
+      if (banner) {
+        banner.className = `urgency-banner urgency-${data.predicted_urgency.toLowerCase()}`;
+      }
+      if (icon) {
+        icon.innerText = data.predicted_urgency === 'High' ? '🚨' : (data.predicted_urgency === 'Medium' ? '⚠️' : '✅');
+      }
+      if (title) title.innerText = `${data.predicted_urgency} Urgency`;
+      if (conf) conf.innerText = `${data.confidence}%`;
+
+      // Probabilities
+      if (document.getElementById('prob-high-val')) document.getElementById('prob-high-val').innerText = `${data.probabilities['High']}%`;
+      if (document.getElementById('prob-med-val')) document.getElementById('prob-med-val').innerText = `${data.probabilities['Medium']}%`;
+      if (document.getElementById('prob-low-val')) document.getElementById('prob-low-val').innerText = `${data.probabilities['Low']}%`;
+      if (document.getElementById('bar-high')) document.getElementById('bar-high').style.width = `${data.probabilities['High']}%`;
+      if (document.getElementById('bar-med')) document.getElementById('bar-med').style.width = `${data.probabilities['Medium']}%`;
+      if (document.getElementById('bar-low')) document.getElementById('bar-low').style.width = `${data.probabilities['Low']}%`;
+
+      // XAI
+      if (document.getElementById('xai-prox-val')) {
+        document.getElementById('xai-prox-val').innerText = data.days_until_due <= 1 ? `Critical (${data.days_until_due}d)` : `Moderate (${data.days_until_due}d)`;
+      }
+      if (document.getElementById('xai-prox-fill')) {
+        const proxPct = Math.max(10, 100 - (data.days_until_due * 7));
+        document.getElementById('xai-prox-fill').style.width = `${proxPct}%`;
+      }
+      if (document.getElementById('xai-imp-val')) {
+        document.getElementById('xai-imp-val').innerText = `${data.importance_rating}/5 (${Math.round(data.importance_rating / 5 * 100)}%)`;
+      }
+      if (document.getElementById('xai-imp-fill')) {
+        document.getElementById('xai-imp-fill').style.width = `${data.importance_rating / 5 * 100}%`;
+      }
+
+      // Details
+      if (document.getElementById('alert-mode-val')) document.getElementById('alert-mode-val').innerText = data.alert_mode;
+      if (document.getElementById('cadence-val')) document.getElementById('cadence-val').innerText = data.frequency;
+      if (document.getElementById('explanation-val')) document.getElementById('explanation-val').innerText = data.explanation;
+
+      // Chips
+      if (document.getElementById('chip-cat')) document.getElementById('chip-cat').innerText = `📁 ${data.category}`;
+      if (document.getElementById('chip-days')) document.getElementById('chip-days').innerText = `⏳ ${data.days_until_due} Day(s) Left`;
+      if (document.getElementById('chip-hours')) document.getElementById('chip-hours').innerText = `⏱️ ${data.estimated_hours} Hours Work`;
+      if (document.getElementById('chip-imp')) document.getElementById('chip-imp').innerText = `⭐ Priority ${data.importance_rating}/5`;
+      if (document.getElementById('chip-slot')) document.getElementById('chip-slot').innerText = `🕒 ${data.time_slot} Slot`;
+    }
+
+    // --- Interactive REST API Console Modal ---
+    const samplePayloads = {
+      viva: {
+        task_name: "Machine Learning Mini Project Viva Defense",
+        category: "Academic",
+        days_until_due: 1,
+        estimated_hours: 4.0,
+        importance_rating: 5,
+        task_complexity: "High",
+        time_slot: "Morning",
+        past_completion_rate: 0.85
+      },
+      med: {
+        task_name: "Morning Prescription Blood Pressure Tablet",
+        category: "Health",
+        days_until_due: 0,
+        estimated_hours: 0.25,
+        importance_rating: 5,
+        task_complexity: "Low",
+        time_slot: "Morning",
+        past_completion_rate: 0.95
+      },
+      bill: {
+        task_name: "Pay Monthly Electricity & Wi-Fi Bill",
+        category: "Financial",
+        days_until_due: 4,
+        estimated_hours: 0.5,
+        importance_rating: 3,
+        task_complexity: "Medium",
+        time_slot: "Afternoon",
+        past_completion_rate: 0.90
+      },
+      grocery: {
+        task_name: "Weekly Fruit & Grocery Supermarket Run",
+        category: "Personal",
+        days_until_due: 10,
+        estimated_hours: 1.5,
+        importance_rating: 2,
+        task_complexity: "Low",
+        time_slot: "Evening",
+        past_completion_rate: 0.75
+      }
+    };
+
+    function openApiModal() {
+      document.getElementById('api-modal').classList.add('open');
+      loadApiPayload('viva');
+    }
+
+    function closeApiModal() {
+      document.getElementById('api-modal').classList.remove('open');
+    }
+
+    function loadApiPayload(key) {
+      const payload = samplePayloads[key] || samplePayloads.viva;
+      document.getElementById('api-request-json').value = JSON.stringify(payload, null, 2);
+    }
+
+    async function sendApiRequest() {
+      const reqBox = document.getElementById('api-request-json');
+      const resBox = document.getElementById('api-response-json');
+      const latencyPill = document.getElementById('api-latency-pill');
+      
+      let payload;
+      try {
+        payload = JSON.parse(reqBox.value);
+      } catch (e) {
+        resBox.innerText = `Invalid JSON Syntax: ${e.message}`;
+        return;
+      }
+
+      latencyPill.innerText = "Connecting...";
+      const startTime = performance.now();
+
+      try {
+        const res = await fetch('/api/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const elapsed = (performance.now() - startTime).toFixed(1);
+        const data = await res.json();
+        latencyPill.innerText = `Status: ${res.status} OK • Latency: ${elapsed} ms`;
+        resBox.innerText = JSON.stringify(data, null, 2);
+      } catch (err) {
+        latencyPill.innerText = `Request Failed`;
+        resBox.innerText = `Error: ${err.message}`;
+      }
+    }
+
+    function copyApiCurl() {
+      const jsonStr = document.getElementById('api-request-json').value.replace(/"/g, '\\"');
+      const curl = `curl -X POST "http://127.0.0.1:5000/api/predict" \\\n  -H "Content-Type: application/json" \\\n  -d '${jsonStr}'`;
+      navigator.clipboard.writeText(curl);
+      showToast("cURL command copied to clipboard!");
+    }
+
+    function copyApiResponse() {
+      const text = document.getElementById('api-response-json').innerText;
+      navigator.clipboard.writeText(text);
+      showToast("API response copied to clipboard!");
+    }
+
+    // --- Audio Demo Modal ---
+    function openAudioModal() {
+      document.getElementById('audio-modal').classList.add('open');
+    }
+    function closeAudioModal() {
+      stopAlarm();
+      document.getElementById('audio-modal').classList.remove('open');
+    }
+
+    // --- Toast Helper ---
+    function showToast(msg) {
+      const toast = document.getElementById('toast-box');
+      const text = document.getElementById('toast-text');
+      if (toast && text) {
+        text.innerText = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2800);
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    // --- Presets Helper ---
+    function fillPreset(category, taskName, days, hours, importance, complexity, slot, pastRate) {
+      document.getElementById('category').value = category;
+      document.getElementById('task_name').value = taskName;
+      
+      document.getElementById('days_until_due').value = days;
+      document.getElementById('days_val').innerText = days + ' day(s)';
+      
+      document.getElementById('estimated_hours').value = hours;
+      document.getElementById('hours_val').innerText = hours + ' hrs';
+      
+      document.getElementById('importance_rating').value = importance;
+      document.getElementById('imp_val').innerText = importance + ' / 5';
+      
+      document.getElementById('task_complexity').value = complexity;
+      document.getElementById('time_slot').value = slot;
+      document.getElementById('past_completion_rate').value = pastRate;
+
+      // Automatically trigger real-time AJAX prediction for instant feedback
+      const form = document.getElementById('reminder-form');
+      if (form) {
+        handleAjaxSubmit({ preventDefault: () => {} });
+      }
+    }
+
+    // Initialize reminders board on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderReminders();
+    });
+  </script>
+</body>
+</html>
